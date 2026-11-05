@@ -10,6 +10,8 @@ import { priceDateLabel } from '../lib/labels.js'
 export default function ResultsView(props) {
   const { roomGraph, capture, live, locale, budget, busy, onRestyle, onNew, onPrint, onExportCsv, onResize, user, saveState, onLoginToSave, costs } = props
   const [sizeOpen, setSizeOpen] = useState(false)
+  const [moreOpen, setMoreOpen] = useState(false) // phones: Print / CSV / New design live in an action sheet
+  const fromSheet = (fn) => () => { setMoreOpen(false); fn() }
   const sizeKind = roomGraph.room.size || (roomGraph._source === 'live' ? 'estimated' : 'typical')
   const views = capture ? 1 + (capture.extras?.length || 0) : 0
   const t = (en, id) => (locale === 'id' ? id : en)
@@ -25,7 +27,12 @@ export default function ResultsView(props) {
       <div className="results-head">
         <div>
           <div className="eyebrow">{room.label[locale] || room.label.en} · {style.label[locale] || style.id}</div>
-          <h1 className="display h2" style={{ marginTop: 8 }}>{title}</h1>
+          <div className="results-title">
+            <h1 className="display h2">{title}</h1>
+            <button className="btn btn-secondary btn-icon results-more" onClick={() => setMoreOpen(true)} aria-label={t('More actions', 'Aksi lainnya')} aria-haspopup="dialog">
+              <Icon name="more" size={19} />
+            </button>
+          </div>
           <div className="meta">
             <button className={`badge badge-button ${sizeKind === 'measured' ? 'badge-ok' : ''}`} onClick={() => setSizeOpen(true)}
               title={t('Change the room size', 'Ubah ukuran ruangan')}>
@@ -55,7 +62,7 @@ export default function ResultsView(props) {
       </div>
 
       <div className="restyle">
-        <span className="small muted" style={{ whiteSpace: 'nowrap' }}>{t('Restyle', 'Ganti gaya')}{costs ? ` (${costs.design} ${t('credit', 'kredit')})` : ''}:</span>
+        <span className="small muted restyle-label" style={{ whiteSpace: 'nowrap' }}>{t('Restyle', 'Ganti gaya')}{costs ? ` (${costs.design} ${t('credit', 'kredit')})` : ''}:</span>
         <div className="chip-scroll">
           {STYLES.map(s => (
             <button key={s.id} className={`chip ${s.id === roomGraph.style.name ? 'active' : ''}`} disabled={busy} onClick={() => s.id !== roomGraph.style.name && onRestyle(s.id)}>
@@ -113,6 +120,21 @@ export default function ResultsView(props) {
           {roomGraph.layout.budget.priceDate && <p className="tiny muted" style={{ marginTop: 12 }}>{t('Product data: IKEA Indonesia, as of', 'Data produk: IKEA Indonesia, per')} {priceDateLabel(roomGraph.layout.budget.priceDate, locale)}</p>}
         </section>
       </div>
+      {moreOpen && (
+        <>
+          <div className="scrim" onClick={() => setMoreOpen(false)} />
+          <div className="modal action-sheet" role="dialog" aria-modal="true" aria-label={t('Design actions', 'Aksi desain')}>
+            <div className="action-sheet-title">{title}</div>
+            <div className="list-group">
+              <button className="list-row" onClick={fromSheet(onPrint)}><Icon name="printer" /><span>{t('Print / save as PDF', 'Cetak / simpan PDF')}</span></button>
+              <button className="list-row" onClick={fromSheet(onExportCsv)}><Icon name="download" /><span>{t('Shopping list (CSV)', 'Daftar belanja (CSV)')}</span></button>
+              <button className="list-row" onClick={fromSheet(() => setSizeOpen(true))}><Icon name="ruler" /><span>{t('Room size', 'Ukuran ruangan')}</span><em>{w.toFixed(1)} × {l.toFixed(1)} m</em></button>
+            </div>
+            <button className="btn btn-primary btn-lg btn-block action-sheet-main" onClick={fromSheet(onNew)}><Icon name="plus" size={18} />{t('New design', 'Desain baru')}</button>
+            <button className="btn btn-ghost btn-lg btn-block" onClick={() => setMoreOpen(false)}>{t('Cancel', 'Batal')}</button>
+          </div>
+        </>
+      )}
       {sizeOpen && <RoomSizeModal locale={locale} dims={roomGraph.room.dimensions} onClose={() => setSizeOpen(false)}
         onSave={dims => { setSizeOpen(false); onResize?.(dims) }} />}
     </main>

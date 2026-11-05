@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import Icon from './Icon.jsx'
 import { CostHint } from './Credits.jsx'
 import { ROOMS, getRoom } from '../data/rooms.js'
@@ -19,6 +19,7 @@ const BUDGET_PRESETS = [10_000_000, 25_000_000, 50_000_000]
 export default function SetupView({ locale, room, style, budget, roomSize, capture, live, needsLogin, costs, onRoom, onStyle, onBudget, onRoomSize, onAddViews, onRemoveView, onClearCapture, onGenerate }) {
   const t = (en, id) => (locale === 'id' ? id : en)
   const inputRef = useRef(null)  // photos and videos from the gallery / disk
+  const stylesRef = useRef(null) // phones: styles scroll sideways; start at the chosen one
   const cameraRef = useRef(null) // phones: take a photo
   const videoRef = useRef(null)  // phones: record a video
   const [drag, setDrag] = useState(false)
@@ -63,6 +64,11 @@ export default function SetupView({ locale, room, style, budget, roomSize, captu
     } catch (e) { setError(e.message) }
   }
   const pick = (ref) => ref.current?.click()
+  useEffect(() => {
+    const row = stylesRef.current
+    const active = row?.querySelector('.style-option.active')
+    if (row && active && row.scrollWidth > row.clientWidth) row.scrollLeft += active.getBoundingClientRect().left - row.getBoundingClientRect().left - 16
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Real product photos per style for the current room — a live moodboard.
   const collages = useMemo(() => {
@@ -153,7 +159,7 @@ export default function SetupView({ locale, room, style, budget, roomSize, captu
                   </>
                 )}
               </div>
-              <button className="btn btn-secondary btn-sm" style={{ marginTop: 6 }} onClick={e => { e.stopPropagation(); useSample() }}>
+              <button className="btn btn-secondary btn-sm sample-btn" style={{ marginTop: 6 }} onClick={e => { e.stopPropagation(); useSample() }}>
                 <Icon name="image" size={15} />{t('Use a sample photo', 'Pakai foto contoh')}
               </button>
             </div>
@@ -182,7 +188,7 @@ export default function SetupView({ locale, room, style, budget, roomSize, captu
 
           <div>
             <div className="field-label"><span>{t('3. Style', '3. Gaya')}</span></div>
-            <div className="style-grid">
+            <div className="style-grid" ref={stylesRef}>
               {STYLES.map(s => (
                 <button key={s.id} className={`style-option ${style === s.id ? 'active' : ''}`} aria-pressed={style === s.id} onClick={() => onStyle(s.id)}>
                   <div className="style-collage">

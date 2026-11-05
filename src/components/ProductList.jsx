@@ -66,7 +66,7 @@ export default function ProductList({ roomGraph, budget, selectedId, onSelect, o
           ))}
         </div>
         {items.length > 0 && (
-          <div style={{ padding: 16, borderTop: '1px solid var(--line)' }}>
+          <div className="list-csv" style={{ padding: 16, borderTop: '1px solid var(--line)' }}>
             <button className="btn btn-secondary btn-block" onClick={onExportCsv}><Icon name="download" size={16} />{t('Download shopping list (CSV)', 'Unduh daftar belanja (CSV)')}</button>
           </div>
         )}

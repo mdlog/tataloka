@@ -578,3 +578,77 @@ button.list-row:hover, a.list-row:hover { background: var(--surface-2); }
   .view-thumb, .view-add { width: 64px; height: 50px; }
   .dropzone-actions .btn { padding: 0 14px; }
 }
+
+/* ---------- results title row + action sheet (the ⋯ menu is phones only) ---------- */
+.results-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-top: 8px; }
+.results-more { display: none; }
+.action-sheet-title { font-weight: 700; font-size: 15px; padding: 0 36px 0 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.action-sheet .list-group { margin-top: 12px; }
+.action-sheet-main { margin-top: 14px; }
+.action-sheet .btn-ghost { margin-top: 4px; }
+
+/* ---------- phones: clean, app-like screens ---------- */
+@media (max-width: 720px) {
+  /* setup: a compact screen header instead of the desktop intro */
+  .setup { padding-top: 16px; }
+  .setup-hero { margin-bottom: 14px; gap: 6px; }
+  .setup-hero .eyebrow, .setup-hero .lead { display: none; }
+  .setup .h1 { font-size: 25px; line-height: 1.15; margin-top: 0 !important; }
+  .setup-hero .chip-row { gap: 4px 12px; }
+  .setup-hero .chip-row .badge { height: auto; padding: 0; background: none; color: var(--muted); font-weight: 550; font-size: 12px; }
+  .setup-grid { gap: 12px; }
+  .setup .card { border-radius: 18px; box-shadow: none; }
+  .setup .card-pad { padding: 18px 16px; }
+  .setup-grid > .card:last-child { gap: 24px !important; grid-template-columns: minmax(0, 1fr); } /* the style carousel must not widen the card */
+  .setup .field-label { margin-bottom: 12px; }
+  .setup .field-label > span:first-child { font-size: 15px; font-weight: 700; letter-spacing: -0.005em; }
+  .setup .divider { margin: 18px 0; }
+  .setup .divider:has(+ .generate-bar), .generate-bar { display: none; } /* the pinned bottom bar is the action */
+
+  /* photo / video */
+  .dropzone { padding: 22px 16px 16px; border-radius: 16px; gap: 6px; }
+  .dropzone-icon { width: 46px; height: 46px; border-radius: 14px; margin-bottom: 2px; }
+  .dropzone .h3 { font-size: 16px; }
+  .dropzone-actions.only-mobile { width: 100%; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+  .dropzone-actions .btn:only-child { flex: 1; max-width: 300px; }
+  .sample-btn { height: auto !important; margin-top: 4px !important; padding: 6px 8px !important; background: none !important; border: 0 !important; box-shadow: none !important; color: var(--brand-ink) !important; }
+
+  /* room type: compact 3-column tiles */
+  .room-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .room-option { flex-direction: column; justify-content: center; text-align: center; gap: 6px; min-height: 86px; padding: 12px 6px; border-radius: 14px; }
+  .room-option b { font-size: 12.5px; line-height: 1.25; }
+  .room-option span { font-size: 11px; }
+
+  /* style: a swipeable row of cards */
+  .style-grid { display: flex; gap: 10px; margin: 0 -16px; padding: 2px 16px 4px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 16px; scrollbar-width: none; }
+  .style-grid::-webkit-scrollbar { display: none; }
+  .style-option { flex: 0 0 62%; scroll-snap-align: start; border-radius: 14px; }
+  .style-collage { height: 108px; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; }
+
+  /* budget: presets as a tidy 2 × 2 grid */
+  .budget-value { font-size: 20px; }
+  .setup .card .chip-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .setup .card .chip-row .chip { justify-content: center; height: 40px; border-radius: 12px; }
+
+  /* results: title + ⋯ menu, quieter chrome, the room first */
+  .results { padding-top: 12px; }
+  .results-head { margin-bottom: 10px; }
+  .results-head .eyebrow, .results-actions { display: none; }
+  .results-title { margin-top: 0; align-items: center; }
+  .results-head .h2 { font-size: 22px; line-height: 1.15; min-width: 0; }
+  .results-more { display: inline-flex; flex: none; width: 40px; height: 40px; border-radius: 12px; }
+  .results-head .meta { margin-top: 8px; }
+  .restyle { gap: 6px; margin-bottom: 10px; }
+  .restyle-label { width: 100%; font-size: 12px; font-weight: 600; }
+  .viewer-card .tabs { margin: 10px 16px; padding: 3px; gap: 2px; border: 0; border-radius: 11px; background: var(--surface-3); }
+  .viewer-card .tab { flex: 1; justify-content: center; height: 32px; padding: 0 6px; border-radius: 9px; font-size: 12.5px; }
+  .viewer-card .tab .icon { display: none; }
+  .viewer-card .tab.active { background: var(--surface); box-shadow: var(--shadow-1); }
+  .budget-total { font-size: 28px; }
+  .product-row { grid-template-columns: 56px minmax(0, 1fr) auto; }
+  .thumb { width: 56px; height: 56px; }
+  .product-row:not(.selected) .row-actions { display: none; } /* tap a product to edit it */
+  .action-sheet { padding-top: 28px; }
+  .list-csv { display: none; } /* in the ⋯ menu on phones */
+  .stage-results .results { padding-bottom: 88px; } /* the last card scrolls clear of the Assistant button */
+}
