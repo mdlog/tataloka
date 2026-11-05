@@ -1,0 +1,24 @@
+{
+  "id": "/app",
+  "name": "Tataloka — Arrange your room with AI",
+  "short_name": "Tataloka",
+  "description": "Redesign your room from one photo with real furniture you can buy.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f3ef",
+  "theme_color": "#f5f3ef",
+  "lang": "id",
+  "categories": ["lifestyle", "shopping", "design"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Desain baru", "url": "/app", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Desain saya", "url": "/app?designs=1", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

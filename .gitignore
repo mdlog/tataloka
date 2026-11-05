@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+dist/
+.npm-cache/
+*.log
+.DS_Store
+
+# Secrets: only the empty template is committed
+.env
+.env.*
+!.env.example
+
+# Local data: accounts, sessions, saved designs and renders (SQLite)
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Local tooling and agent configuration (machine-specific, may hold session tokens)
+.insta/
+.claude/
+.agents/
+.codex/
+.github/skills/
+skills-lock.json

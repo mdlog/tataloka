@@ -1,0 +1,56 @@
+{
+  "name": "tataloka",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Tataloka — AI interior designer built on the Meta Model API: one photo or video of a room becomes a shoppable design with real IKEA Indonesia products, a 3D room, a floor plan and a photoreal render.",
+  "author": "mdlog",
+  "license": "MIT",
+  "homepage": "https://www.tataloka.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdlog/tataloka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdlog/tataloka/issues"
+  },
+  "keywords": [
+    "meta-ai",
+    "muse-spark",
+    "sam",
+    "interior-design",
+    "react",
+    "threejs",
+    "pwa",
+    "hackathon"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node --disable-warning=ExperimentalWarning server/server.js --dev",
+    "build": "vite build",
+    "start": "node --disable-warning=ExperimentalWarning server/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js",
+    "check:api": "node --disable-warning=ExperimentalWarning scripts/check-api.js",
+    "check:live": "node --disable-warning=ExperimentalWarning scripts/live-check.js",
+    "credits": "node --disable-warning=ExperimentalWarning scripts/credits.js",
+    "catalog:build": "node --disable-warning=ExperimentalWarning scripts/build-catalog.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.105.0",
+    "@react-three/fiber": "^8.15.19",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.160.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^6.0.3"
+  }
+}
