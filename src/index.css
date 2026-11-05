@@ -652,3 +652,11 @@ button.list-row:hover, a.list-row:hover { background: var(--surface-2); }
   .list-csv { display: none; } /* in the ⋯ menu on phones */
   .stage-results .results { padding-bottom: 88px; } /* the last card scrolls clear of the Assistant button */
 }
+
+/* ---------- crash screen (ErrorBoundary): never a blank page ---------- */
+.crash { min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; padding: 24px 16px; background: var(--bg); }
+.crash-card { width: 100%; max-width: 380px; display: grid; justify-items: center; gap: 12px; text-align: center; }
+.crash-card .brand-mark { width: 44px; height: 44px; border-radius: 12px; }
+.crash-card h1 { font-size: 26px; }
+.crash-card p { font-size: 15px; color: var(--ink-2); }
+.crash-actions { display: grid; gap: 6px; width: 100%; margin-top: 8px; }

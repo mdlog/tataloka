@@ -12,7 +12,10 @@ const FILL = {
 // To-scale top view (meters). x → right, z → down (towards the viewer / open side).
 export default function FloorPlan({ roomGraph, selectedId, onSelect, onMove, locale = 'en', interactive = true }) {
   const svgRef = useRef(null)
-  const [drag, setDrag] = useState(null) // { id, dx, dz, pos }
+  // { id, dx, dz, pos, pointerId }. The ref is the source of truth for the handlers: a phone can
+  // deliver "leave" and another "move" before React re-renders, and a stale drag must never be read.
+  const dragRef = useRef(null)
+  const [drag, setDrag] = useState(null)
   const { w, l } = roomGraph.room.dimensions
   const roomType = roomGraph.room.type
   const pad = 0.75
@@ -20,33 +23,45 @@ export default function FloorPlan({ roomGraph, selectedId, onSelect, onMove, loc
   const fs = Math.max(0.1, Math.min(w, l) / 28)
   const winW = Math.min(1.6, w * 0.42)
 
+  // Screen point → room meters; null while the plan is not laid out.
   function toRoom(e) {
     const svg = svgRef.current
+    const ctm = svg?.getScreenCTM()
+    if (!ctm) return null
     const pt = svg.createSVGPoint()
     pt.x = e.clientX; pt.y = e.clientY
-    const p = pt.matrixTransform(svg.getScreenCTM().inverse())
+    const p = pt.matrixTransform(ctm.inverse())
     return [p.x, p.y]
   }
   function down(e, it) {
-    if (!interactive) return
+    if (!interactive || dragRef.current) return // one finger drags; a second one is ignored
     e.stopPropagation()
     onSelect?.(it.id)
-    const [x, z] = toRoom(e)
-    e.currentTarget.setPointerCapture?.(e.pointerId)
-    setDrag({ id: it.id, dx: x - it.pos[0], dz: z - it.pos[1], pos: it.pos })
+    const at = toRoom(e)
+    if (!at) return
+    const d = { id: it.id, dx: at[0] - it.pos[0], dz: at[1] - it.pos[1], pos: it.pos, pointerId: e.pointerId }
+    dragRef.current = d
+    setDrag(d)
+    try { e.currentTarget.setPointerCapture(e.pointerId) } catch { /* some browsers refuse; leaving the plan then ends the drag */ }
   }
   function move(e) {
-    if (!drag) return
-    const [x, z] = toRoom(e)
-    setDrag(d => ({ ...d, pos: [x - d.dx, z - d.dz] }))
+    const d = dragRef.current
+    if (!d || e.pointerId !== d.pointerId) return
+    const at = toRoom(e)
+    if (!at) return
+    const next = { ...d, pos: [at[0] - d.dx, at[1] - d.dz] }
+    dragRef.current = next
+    setDrag(next)
   }
-  function up() {
-    if (!drag) return
-    const it = items.find(i => i.id === drag.id)
-    if (it && (Math.abs(drag.pos[0] - it.pos[0]) > 0.01 || Math.abs(drag.pos[1] - it.pos[1]) > 0.01)) {
-      onMove?.(drag.id, { pos: [Number(drag.pos[0].toFixed(2)), Number(drag.pos[1].toFixed(2))] })
-    }
+  function end(e) {
+    const d = dragRef.current
+    if (!d || e.pointerId !== d.pointerId) return
+    dragRef.current = null
     setDrag(null)
+    const it = items.find(i => i.id === d.id)
+    if (it && (Math.abs(d.pos[0] - it.pos[0]) > 0.01 || Math.abs(d.pos[1] - it.pos[1]) > 0.01)) {
+      onMove?.(d.id, { pos: [Number(d.pos[0].toFixed(2)), Number(d.pos[1].toFixed(2))] })
+    }
   }
 
   const grid = []
@@ -55,7 +70,7 @@ export default function FloorPlan({ roomGraph, selectedId, onSelect, onMove, loc
 
   return (
     <svg ref={svgRef} className="plan" viewBox={`${-w / 2 - pad} ${-l / 2 - pad} ${w + pad * 2} ${l + pad * 2}`}
-      preserveAspectRatio="xMidYMid meet" onPointerMove={move} onPointerUp={up} onPointerLeave={up}
+      preserveAspectRatio="xMidYMid meet" onPointerMove={move} onPointerUp={end} onPointerCancel={end} onPointerLeave={end}
       onPointerDown={() => onSelect?.(null)} role="img" aria-label={`Floor plan ${w} × ${l} m`}>
       <rect x={-w / 2} y={-l / 2} width={w} height={l} fill="#fbfaf7" />
       <g stroke="#ece7de" strokeWidth={0.01}>{grid}</g>

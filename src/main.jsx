@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 // "/" is the marketing landing page, "/app" is the design tool.
 // Each is its own lazily loaded chunk, so the landing page stays light.
@@ -34,6 +35,8 @@ function Splash() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<Splash />}>{isApp ? <App /> : <Landing />}</Suspense>
+    <ErrorBoundary>
+      <Suspense fallback={<Splash />}>{isApp ? <App /> : <Landing />}</Suspense>
+    </ErrorBoundary>
   </React.StrictMode>
 )
