@@ -10,8 +10,8 @@ dist/
 .env.*
 !.env.example
 
-# Local data: accounts, sessions, saved designs and renders (SQLite)
-data/
+# Local data: accounts, sessions, saved designs and renders (SQLite) — the root folder only, not src/data
+/data/
 *.db
 *.db-wal
 *.db-shm

@@ -1,0 +1,5710 @@
+{
+ "fetchedAt": "2026-11-04T02:50:06.394Z",
+ "sources": {
+  "ikea": "IKEA Indonesia — official sitemap + schema.org Product data on www.ikea.co.id product pages",
+  "marketplace": "Meta Model API web search (muse-spark-1.3) — URLs verified against raw search results"
+ },
+ "products": [
+  {
+   "id": "ikea-09629157",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "SÖDERHAMN 4-seat sofa with chaise longue",
+   "name": "SÖDERHAMN",
+   "priceIDR": 14440000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/667/0766707_PE753875_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/soderhamn-spr-09629157",
+   "store": "IKEA Indonesia",
+   "sku": "096.291.57",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00488821",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "GLOSTAD 2-seat sofa, Knisa medium blue",
+   "name": "GLOSTAD",
+   "priceIDR": 1895000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/785/1578500_PE1034143_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/glostad-art-00488821",
+   "store": "IKEA Indonesia",
+   "sku": "004.888.21",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09619200",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "MANNARP 3-seat sofa with chaise longue, Saxemara black-blue",
+   "name": "MANNARP",
+   "priceIDR": 7695000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/785/1578543_PE1034182_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/mannarp-spr-09619200",
+   "store": "IKEA Indonesia",
+   "sku": "096.192.00",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-19429539",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "ÄPPLARYD 4-seat sofa with chaise longue, Lejde light grey",
+   "name": "ÄPPLARYD",
+   "priceIDR": 18895000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/772/1577240_PE1033033_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/applaryd-spr-19429539",
+   "store": "IKEA Indonesia",
+   "sku": "194.295.39",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-19509041",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "EKTORP 3-seat sofa with chaise longue, Kilanda light beige",
+   "name": "EKTORP",
+   "priceIDR": 9495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/777/1577721_PE1033471_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/ektorp-spr-19509041",
+   "store": "IKEA Indonesia",
+   "sku": "195.090.41",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-09443055",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "KIVIK 3-seat sofa with chaise longue, Kelinge grey-turquoise",
+   "name": "KIVIK",
+   "priceIDR": 12290000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/772/1577276_PE1033069_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/kivik-spr-09443055",
+   "store": "IKEA Indonesia",
+   "sku": "094.430.55",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20618505",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "GULLVALLA 2-seat sofa, Silkeryd dark grey-beige",
+   "name": "GULLVALLA",
+   "priceIDR": 3295000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/784/1578446_PE1034089_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/gullvalla-art-20618505",
+   "store": "IKEA Indonesia",
+   "sku": "206.185.05",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-10618520",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "SALTMYRAN 3-seat sofa, Öreryd blue",
+   "name": "SALTMYRAN",
+   "priceIDR": 3495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/784/1578447_PE1034090_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/saltmyran-art-10618520",
+   "store": "IKEA Indonesia",
+   "sku": "106.185.20",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10594393",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "SLATORP 2-seat sofa, Hakebo yellow-brown",
+   "name": "SLATORP",
+   "priceIDR": 7995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/780/1578009_PE1033716_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/slatorp-art-10594393",
+   "store": "IKEA Indonesia",
+   "sku": "105.943.93",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10295025",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "HEMLINGBY two-seat sofa, Bomstad black",
+   "name": "HEMLINGBY",
+   "priceIDR": 3495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/689/0368914_PE551188_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/hemlingby-art-10295025",
+   "store": "IKEA Indonesia",
+   "sku": "102.950.25",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-60542702",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "BILLESHOLM 2-seat sofa, light beige",
+   "name": "BILLESHOLM",
+   "priceIDR": 1795000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/775/1577528_PE1033280_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/billesholm-art-60542702",
+   "store": "IKEA Indonesia",
+   "sku": "605.427.02",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-09622580",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "SALTSJÖBADEN 3-seat sofa, Tonerud red-brown",
+   "name": "SALTSJÖBADEN",
+   "priceIDR": 6495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/765/1576567_PE1032541_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/saltsjobaden-spr-09622580",
+   "store": "IKEA Indonesia",
+   "sku": "096.225.80",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10489009",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "GLOSTAD 2-seat sofa, Knisa dark grey",
+   "name": "GLOSTAD",
+   "priceIDR": 1895000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/771/1577178_PE1033002_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/glostad-art-10489009",
+   "store": "IKEA Indonesia",
+   "sku": "104.890.09",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09269980",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "LANDSKRONA 5-seat sofa, with chaise longues/Gunnared dark grey/wood",
+   "name": "LANDSKRONA",
+   "priceIDR": 20795000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/771/1577147_PE1032978_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/landskrona-spr-09269980",
+   "store": "IKEA Indonesia",
+   "sku": "092.699.80",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-30506244",
+   "archetype": "sofa",
+   "rooms": [
+    "living"
+   ],
+   "title": "ÄPPLARYD 3-seat sofa, Lejde light grey",
+   "name": "ÄPPLARYD",
+   "priceIDR": 12495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/929/0992909_PE820327_S4.webp",
+   "url": "https://www.ikea.co.id/en/products/sofas/sofas/applaryd-art-30506244",
+   "store": "IKEA Indonesia",
+   "sku": "305.062.44",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10449909",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "LACK side table, white, 55x55 cm",
+   "name": "LACK",
+   "priceIDR": 199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/506/0750653_PE746802_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/lack-art-10449909",
+   "store": "IKEA Indonesia",
+   "sku": "104.499.09",
+   "availability": "InStock",
+   "size": {
+    "w": 0.55,
+    "d": 0.55
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10635850",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "ÖRTRÄSK coffee table, black ash veneer, 110x68 cm",
+   "name": "ÖRTRÄSK",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/438/1543874_PE1018964_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/ortrask-art-10635850",
+   "store": "IKEA Indonesia",
+   "sku": "106.358.50",
+   "availability": "InStock",
+   "size": {
+    "w": 1.1,
+    "d": 0.68
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-10578977",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "TÅNEBRO side table, in/outdoor/light grey-beige, 46 cm",
+   "name": "TÅNEBRO",
+   "priceIDR": 349000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/913/1291392_PE934885_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/tanebro-art-10578977",
+   "store": "IKEA Indonesia",
+   "sku": "105.789.77",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10497580",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "FRÖTORP side table, anthracite marble effect/black glass, 48 cm",
+   "name": "FRÖTORP",
+   "priceIDR": 1799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/225/1022509_PE832777_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/frotorp-art-10497580",
+   "store": "IKEA Indonesia",
+   "sku": "104.975.80",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00340387",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "BURVIK side table, black, 38 cm",
+   "name": "BURVIK",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/512/0551236_PE658472_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/burvik-art-00340387",
+   "store": "IKEA Indonesia",
+   "sku": "003.403.87",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30628033",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "VALNÄS side table, oak veneer",
+   "name": "VALNÄS",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/745/1474560_PE998138_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/valnas-art-30628033",
+   "store": "IKEA Indonesia",
+   "sku": "306.280.33",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-30606168",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "GRIMSARBO side table, pine plywood/bright red",
+   "name": "GRIMSARBO",
+   "priceIDR": 399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/888/1388878_PE965003_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/grimsarbo-art-30606168",
+   "store": "IKEA Indonesia",
+   "sku": "306.061.68",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-30608997",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "TRANERED coffee table, dark brown, 90x90 cm",
+   "name": "TRANERED",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/789/1478959_PE999902_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/tranered-art-30608997",
+   "store": "IKEA Indonesia",
+   "sku": "306.089.97",
+   "availability": "InStock",
+   "size": {
+    "w": 0.9,
+    "d": 0.9
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10609120",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "ÄMMARYD coffee table, white, 98x59 cm",
+   "name": "ÄMMARYD",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/478/1447805_PE989265_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/ammaryd-art-10609120",
+   "store": "IKEA Indonesia",
+   "sku": "106.091.20",
+   "availability": "InStock",
+   "size": {
+    "w": 0.98,
+    "d": 0.59
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-60570827",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "BAGGBODA side table, white, 71x50 cm",
+   "name": "BAGGBODA",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/655/1265558_PE927740_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/baggboda-art-60570827",
+   "store": "IKEA Indonesia",
+   "sku": "605.708.27",
+   "availability": "InStock",
+   "size": {
+    "w": 0.71,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20530918",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "OLSERÖD side table, anthracite/dark grey, 53x50 cm",
+   "name": "OLSERÖD",
+   "priceIDR": 399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/508/1150823_PE884681_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/olserod-art-20530918",
+   "store": "IKEA Indonesia",
+   "sku": "205.309.18",
+   "availability": "InStock",
+   "size": {
+    "w": 0.53,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-60619881",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "BORGEBY side table, birch veneer, 46 cm",
+   "name": "BORGEBY",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/721/1472146_PE997462_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/borgeby-art-60619881",
+   "store": "IKEA Indonesia",
+   "sku": "606.198.81",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-70349445",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "TINGBY side table on castors, grey, 50x50 cm",
+   "name": "TINGBY",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/796/0479620_PE618495_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/tingby-art-70349445",
+   "store": "IKEA Indonesia",
+   "sku": "703.494.45",
+   "availability": "InStock",
+   "size": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-80531986",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "SKRUVBY side table, black-blue, 40x32 cm",
+   "name": "SKRUVBY",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/236/1123678_PE874844_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/skruvby-art-80531986",
+   "store": "IKEA Indonesia",
+   "sku": "805.319.86",
+   "availability": "InStock",
+   "size": {
+    "w": 0.4,
+    "d": 0.32
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-90543088",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "MOXBODA coffee table, foldable/bamboo, 70 cm",
+   "name": "MOXBODA",
+   "priceIDR": 1199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/636/1163643_PE890283_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/moxboda-art-90543088",
+   "store": "IKEA Indonesia",
+   "sku": "905.430.88",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-90353078",
+   "archetype": "coffee_table",
+   "rooms": [
+    "living"
+   ],
+   "title": "STOCKHOLM coffee table, walnut veneer, 180x59 cm",
+   "name": "STOCKHOLM",
+   "priceIDR": 5299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/812/0181245_PE332924_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/sofa-table/sofa-tables/stockholm-art-90353078",
+   "store": "IKEA Indonesia",
+   "sku": "903.530.78",
+   "availability": "InStock",
+   "size": {
+    "w": 1.8,
+    "d": 0.59
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-10625525",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "LACK TV bench, white, 90x36x45 cm",
+   "name": "LACK",
+   "priceIDR": 399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/825/1482520_PE1001066_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/lack-art-10625525",
+   "store": "IKEA Indonesia",
+   "sku": "106.255.25",
+   "availability": "InStock",
+   "size": {
+    "w": 0.9,
+    "d": 0.36
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09494667",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "SKRUVBY TV storage combination, white, 216x38x140 cm",
+   "name": "SKRUVBY",
+   "priceIDR": 3498000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/306/1130674_PE877920_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/skruvby-spr-09494667",
+   "store": "IKEA Indonesia",
+   "sku": "094.946.67",
+   "availability": "InStock",
+   "size": {
+    "w": 2.16,
+    "d": 0.38
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00352573",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "BYÅS TV bench, high-gloss white, 160x42x45 cm",
+   "name": "BYÅS",
+   "priceIDR": 2199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/444/0644411_PE702653_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/byas-art-00352573",
+   "store": "IKEA Indonesia",
+   "sku": "003.525.73",
+   "availability": "InStock",
+   "size": {
+    "w": 1.6,
+    "d": 0.42
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30538853",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "JÄTTESTA TV bench, white/light bamboo, 160x40x49 cm",
+   "name": "JÄTTESTA",
+   "priceIDR": 2999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/549/1154959_PE886377_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/jattesta-art-30538853",
+   "store": "IKEA Indonesia",
+   "sku": "305.388.53",
+   "availability": "InStock",
+   "size": {
+    "w": 1.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-49557907",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "KALLAX tv bench with underframe, black-brown, 147x39x78 cm",
+   "name": "KALLAX",
+   "priceIDR": 2049000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/429/1242990_PE920481_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/kallax-spr-49557907",
+   "store": "IKEA Indonesia",
+   "sku": "495.579.07",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 1.47,
+    "d": 0.39
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-20597819",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "RÅDMANSÖ TV bench, brown walnut effect, 176x48x66 cm",
+   "name": "RÅDMANSÖ",
+   "priceIDR": 3499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/170/1417027_PE975802_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/radmanso-art-20597819",
+   "store": "IKEA Indonesia",
+   "sku": "205.978.19",
+   "availability": "InStock",
+   "size": {
+    "w": 1.76,
+    "d": 0.48
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-70501310",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "FJÄLLBO TV bench, black, 100x36x54 cm",
+   "name": "FJÄLLBO",
+   "priceIDR": 1899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/462/1146219_PE882931_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/fjallbo-art-70501310",
+   "store": "IKEA Indonesia",
+   "sku": "705.013.10",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 0.36
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-50507025",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "BOASTAD TV bench, black/oak veneer, 121x42x45 cm",
+   "name": "BOASTAD",
+   "priceIDR": 4799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/412/1241277_PE919733_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/boastad-art-50507025",
+   "store": "IKEA Indonesia",
+   "sku": "505.070.25",
+   "availability": "InStock",
+   "size": {
+    "w": 1.21,
+    "d": 0.42
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-90508853",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "SKRUVBY TV bench, white, 156x38x60 cm",
+   "name": "SKRUVBY",
+   "priceIDR": 1899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/281/1128171_PE876450_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/skruvby-art-90508853",
+   "store": "IKEA Indonesia",
+   "sku": "905.088.53",
+   "availability": "InStock",
+   "size": {
+    "w": 1.56,
+    "d": 0.38
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-49569458",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "LACK/KALLAX TV storage combination, white, 224x39x147 cm",
+   "name": "LACK/KALLAX",
+   "priceIDR": 4777000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/430/1243016_PE920483_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/lack-kallax-spr-49569458",
+   "store": "IKEA Indonesia",
+   "sku": "495.694.58",
+   "availability": "InStock",
+   "size": {
+    "w": 2.24,
+    "d": 0.39
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-70514609",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "JÄTTESTA TV bench, black, 160x40x49 cm",
+   "name": "JÄTTESTA",
+   "priceIDR": 2999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/549/1154960_PE886376_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/jattesta-art-70514609",
+   "store": "IKEA Indonesia",
+   "sku": "705.146.09",
+   "availability": "InStock",
+   "size": {
+    "w": 1.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-19569445",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "KALLAX TV storage combination, white stained oak effect, 147x39x60 cm",
+   "name": "KALLAX",
+   "priceIDR": 2979000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/779/1277929_PE931115_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/kallax-spr-19569445",
+   "store": "IKEA Indonesia",
+   "sku": "195.694.45",
+   "availability": "InStock",
+   "size": {
+    "w": 1.47,
+    "d": 0.39
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30339293",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "FJÄLLBO TV bench, black, 150x36x54 cm",
+   "name": "FJÄLLBO",
+   "priceIDR": 2299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/733/0473390_PE614545_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/fjallbo-art-30339293",
+   "store": "IKEA Indonesia",
+   "sku": "303.392.93",
+   "availability": "InStock",
+   "size": {
+    "w": 1.5,
+    "d": 0.36
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-50498894",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "LACK TV bench, white, 120x35x36 cm",
+   "name": "LACK",
+   "priceIDR": 749000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/842/0984218_PE816164_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/lack-art-50498894",
+   "store": "IKEA Indonesia",
+   "sku": "504.988.94",
+   "availability": "InStock",
+   "size": {
+    "w": 1.2,
+    "d": 0.35
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-79494659",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "SKRUVBY TV storage combination, white, 226x38x90 cm",
+   "name": "SKRUVBY",
+   "priceIDR": 3798000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/306/1130676_PE877922_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/skruvby-spr-79494659",
+   "store": "IKEA Indonesia",
+   "sku": "794.946.59",
+   "availability": "InStock",
+   "size": {
+    "w": 2.26,
+    "d": 0.38
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-50562088",
+   "archetype": "tv_console",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "KALLAX TV bench, white, 147x60 cm",
+   "name": "KALLAX",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/388/1238898_PE918671_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/media-furniture/tv-media-furniture/kallax-art-50562088",
+   "store": "IKEA Indonesia",
+   "sku": "505.620.88",
+   "availability": "InStock",
+   "size": {
+    "w": 1.47,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00001894",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "KURILERLARK rug high pile, orange, 160 x 230 cm",
+   "name": "KURILERLARK",
+   "priceIDR": 899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786431942_00001894_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/kurilerlark-art-00001894",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.94",
+   "availability": "InStock",
+   "size": {
+    "w": 2.3,
+    "d": 1.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00001706",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "SWAN Tikar two tone style - brick purple 120x180",
+   "name": "SWAN",
+   "priceIDR": 79900,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1756451610_00001706_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/swan-art-00001706",
+   "store": "IKEA Indonesia",
+   "sku": "000.017.06",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00001883",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "DVARGTRY rug flatwoven, grey, 125 x 170 cm",
+   "name": "DVARGTRY",
+   "priceIDR": 299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786430515_00001883_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/dvargtry-art-00001883",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.83",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 1.25
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00001887",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "HYBRIDSPIREA rug low pile, beige, 125 x 170 cm",
+   "name": "HYBRIDSPIREA",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786431076_00001887_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/hybridspirea-art-00001887",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.87",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 1.25
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00001895",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "RIEINUSTRAD rug low pile, multicolour, 120 x 170 cm",
+   "name": "RIEINUSTRAD",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786432052_00001895_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/rieinustrad-art-00001895",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.95",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 1.2
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-30183084",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "STOPP FILT rug underlay with anti-slip, 165x235 cm",
+   "name": "STOPP FILT",
+   "priceIDR": 150000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/767/0076790_PE097520_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/rugs/stopp-filt-art-30183084",
+   "store": "IKEA Indonesia",
+   "sku": "301.830.84",
+   "availability": "InStock",
+   "size": {
+    "w": 2.35,
+    "d": 1.65
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00588806",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "BUSSFIL rug, low pile, beige, 120x180 cm",
+   "name": "BUSSFIL",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/282/1128244_PE876509_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/rugs/bussfil-art-00588806",
+   "store": "IKEA Indonesia",
+   "sku": "005.888.06",
+   "availability": "InStock",
+   "size": {
+    "w": 1.8,
+    "d": 1.2
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00001793",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "SWAN Tikar electric pattern - green 120x180",
+   "name": "SWAN",
+   "priceIDR": 89900,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1775707194_00001793_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/swan-art-00001793",
+   "store": "IKEA Indonesia",
+   "sku": "000.017.93",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00001889",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "KURILERLARK rug high pile, beige, 120 x 170 cm",
+   "name": "KURILERLARK",
+   "priceIDR": 599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786431438_00001889_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/kurilerlark-art-00001889",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.89",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 1.2
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00001886",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "HYBRIDSPIREA rug low pile, green, 170 x 230 cm",
+   "name": "HYBRIDSPIREA",
+   "priceIDR": 799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786430901_00001886_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/hybridspirea-art-00001886",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.86",
+   "availability": "InStock",
+   "size": {
+    "w": 2.3,
+    "d": 1.7
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00001884",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "DVARGTRY rug flatwoven, grey, 170 x 230 cm",
+   "name": "DVARGTRY",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786430596_00001884_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/dvargtry-art-00001884",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.84",
+   "availability": "InStock",
+   "size": {
+    "w": 2.3,
+    "d": 1.7
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00001896",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "RIEINUSTRAD rug low pile, multicolour, 160 x 230 cm",
+   "name": "RIEINUSTRAD",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786432309_00001896_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/rieinustrad-art-00001896",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.96",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 2.3,
+    "d": 1.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40588809",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "BUSSFIL rug, low pile, dark grey, 200x300 cm",
+   "name": "BUSSFIL",
+   "priceIDR": 2999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/282/1128259_PE876522_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/rugs/bussfil-art-40588809",
+   "store": "IKEA Indonesia",
+   "sku": "405.888.09",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 3,
+    "d": 2
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70550211",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "STOPP FILT rug underlay with anti-slip, 123x185 cm",
+   "name": "STOPP FILT",
+   "priceIDR": 100000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/767/0076790_PE097520_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/rugs/stopp-filt-art-70550211",
+   "store": "IKEA Indonesia",
+   "sku": "705.502.11",
+   "availability": "InStock",
+   "size": {
+    "w": 1.85,
+    "d": 1.23
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00001710",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "SWAN Tikar diamond red 180X240",
+   "name": "SWAN",
+   "priceIDR": 159000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1756453445_00001710_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/swan-art-00001710",
+   "store": "IKEA Indonesia",
+   "sku": "000.017.10",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00001890",
+   "archetype": "rug",
+   "rooms": [
+    "living",
+    "bedroom",
+    "dining",
+    "workspace"
+   ],
+   "title": "KURILERLARK rug high pile, beige, 160 x 230 cm",
+   "name": "KURILERLARK",
+   "priceIDR": 899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/commons/1786431562_00001890_S4.jpeg",
+   "url": "https://www.ikea.co.id/en/products/home-furnishing-rugs/small-rugs-and-runners/kurilerlark-art-00001890",
+   "store": "IKEA Indonesia",
+   "sku": "000.018.90",
+   "availability": "InStock",
+   "size": {
+    "w": 2.3,
+    "d": 1.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10559257",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "KINNAHULT floor lamp, ash/white, 150 cm",
+   "name": "KINNAHULT",
+   "priceIDR": 899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/707/1170759_PE892939_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/kinnahult-art-10559257",
+   "store": "IKEA Indonesia",
+   "sku": "105.592.57",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00321317",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "ÅRSTID floor lamp, brass/white",
+   "name": "ÅRSTID",
+   "priceIDR": 749000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/906/0390610_PE566328_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/arstid-art-00321317",
+   "store": "IKEA Indonesia",
+   "sku": "003.213.17",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-30540016",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "KLÖVING floor lamp, anthracite",
+   "name": "KLÖVING",
+   "priceIDR": 599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/418/1341867_PE948915_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/kloving-art-30540016",
+   "store": "IKEA Indonesia",
+   "sku": "305.400.16",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-20404095",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "TÅGARP floor uplighter, black/white",
+   "name": "TÅGARP",
+   "priceIDR": 199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/108/0810840_PE771436_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/tagarp-art-20404095",
+   "store": "IKEA Indonesia",
+   "sku": "204.040.95",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-30519878",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "ISJAKT LED floor uplighter/reading lamp, dimmable/nickel-plated, 180 cm",
+   "name": "ISJAKT",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/067/1006753_PE825819_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/isjakt-art-30519878",
+   "store": "IKEA Indonesia",
+   "sku": "305.198.78",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-30543835",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "FLYGHÖJD floor lamp, brass/green-grey",
+   "name": "FLYGHÖJD",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/444/1244482_PE921202_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/flyghojd-art-30543835",
+   "store": "IKEA Indonesia",
+   "sku": "305.438.35",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-30566737",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "STRANDAD floor lamp, white/black",
+   "name": "STRANDAD",
+   "priceIDR": 149000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/033/1403319_PE969302_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/strandad-art-30566737",
+   "store": "IKEA Indonesia",
+   "sku": "305.667.37",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40477726",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "HEKTOGRAM floor uplighter, silver-colour/white",
+   "name": "HEKTOGRAM",
+   "priceIDR": 349000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/411/0941175_PE795353_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/hektogram-art-40477726",
+   "store": "IKEA Indonesia",
+   "sku": "404.777.26",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-30614314",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "AKTERSPRING floor lamp, opal white glass/brass-plated, 162 cm",
+   "name": "AKTERSPRING",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/312/1531221_PE1015569_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/akterspring-art-30614314",
+   "store": "IKEA Indonesia",
+   "sku": "306.143.14",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-20393600",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "HEKTAR floor lamp with 3-spot, dark grey",
+   "name": "HEKTAR",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/062/0606224_PE682139_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/hektar-art-20393600",
+   "store": "IKEA Indonesia",
+   "sku": "203.936.00",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40608505",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "IKEA PS 2026 floor uplighter, dark red, 182 cm",
+   "name": "IKEA PS 2026",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/186/1418671_PE976686_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/ikea-ps-2026-art-40608505",
+   "store": "IKEA Indonesia",
+   "sku": "406.085.05",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-00541526",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "ÖKENSAND floor lamp, beech/white",
+   "name": "ÖKENSAND",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/878/1187892_PE899535_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/okensand-art-00541526",
+   "store": "IKEA Indonesia",
+   "sku": "005.415.26",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10613768",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "MOSSPLYM floor uplighter/reading lamp, opal white glass/dark brown oak, 180 cm",
+   "name": "MOSSPLYM",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/855/1485544_PE1002016_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/mossplym-art-10613768",
+   "store": "IKEA Indonesia",
+   "sku": "106.137.68",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-50585914",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "STOCKHOLM 2025 floor lamp, white textile/brass-plated, 159 cm",
+   "name": "STOCKHOLM 2025",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/851/1285165_PE933236_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/stockholm-2025-art-50585914",
+   "store": "IKEA Indonesia",
+   "sku": "505.859.14",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00566687",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "BLÄNKFYR floor lamp, nickel-plated",
+   "name": "BLÄNKFYR",
+   "priceIDR": 649000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/426/1342648_PE949079_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/blankfyr-art-00566687",
+   "store": "IKEA Indonesia",
+   "sku": "005.666.87",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10437765",
+   "archetype": "lamp",
+   "rooms": [
+    "living",
+    "bedroom",
+    "kitchen",
+    "workspace",
+    "dining",
+    "bathroom"
+   ],
+   "title": "SIMRISHAMN floor lamp, chrome-plated/opal white glass",
+   "name": "SIMRISHAMN",
+   "priceIDR": 1699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/894/0789445_PE763989_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/luminaires/floor-lamps/simrishamn-art-10437765",
+   "store": "IKEA Indonesia",
+   "sku": "104.377.65",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-09607481",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "RAMNEFJÄLL upholstered bed frame, Kilanda dark blue/Luröy, 180x200 cm",
+   "name": "RAMNEFJÄLL",
+   "priceIDR": 4799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/807/1480721_PE1000244_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-with-upholstered-headboard/ramnefjall-spr-09607481",
+   "store": "IKEA Indonesia",
+   "sku": "096.074.81",
+   "availability": "InStock",
+   "size": {
+    "w": 1.9,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00249492",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "MALM bed frame, high, black-brown, 120x200 cm",
+   "name": "MALM",
+   "priceIDR": 2399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/488/0948884_PE799349_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/malm-art-00249492",
+   "store": "IKEA Indonesia",
+   "sku": "002.494.92",
+   "availability": "InStock",
+   "size": {
+    "w": 1.3,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-09198153",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "BRIMNES bed frame with storage, white/Lönset, 180x200 cm",
+   "name": "BRIMNES",
+   "priceIDR": 6799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/510/1151024_PE884762_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/brimnes-spr-09198153",
+   "store": "IKEA Indonesia",
+   "sku": "091.981.53",
+   "availability": "InStock",
+   "size": {
+    "w": 1.9,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00354384",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "HEMNES bed frame, white stain, 90x200 cm",
+   "name": "HEMNES",
+   "priceIDR": 2299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/376/0637616_PE698429_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/hemnes-art-00354384",
+   "store": "IKEA Indonesia",
+   "sku": "003.543.84",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00349854",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "NORDLI bed frame with storage, white, 180x200 cm",
+   "name": "NORDLI",
+   "priceIDR": 7499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/510/1151058_PE884758_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/nordli-art-00349854",
+   "store": "IKEA Indonesia",
+   "sku": "003.498.54",
+   "availability": "InStock",
+   "size": {
+    "w": 1.9,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-19581980",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "VIHALS bed frame with 2 storage boxes, white/Luröy, 160x200 cm",
+   "name": "VIHALS",
+   "priceIDR": 3299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/470/1447042_PE988926_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/vihals-spr-19581980",
+   "store": "IKEA Indonesia",
+   "sku": "195.819.80",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10558205",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "BRUKSVARA bed frame, white, 90x200 cm",
+   "name": "BRUKSVARA",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/873/1187376_PE899199_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/bruksvara-art-10558205",
+   "store": "IKEA Indonesia",
+   "sku": "105.582.05",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-29406486",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "IDANÄS bed frame, dark brown/Luröy, 160x200 cm",
+   "name": "IDANÄS",
+   "priceIDR": 5599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/160/0916066_PE784942_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/idanas-spr-29406486",
+   "store": "IKEA Indonesia",
+   "sku": "294.064.86",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09614523",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "GULLABERG bed frame, white/Luröy, 180x200 cm",
+   "name": "GULLABERG",
+   "priceIDR": 5499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/885/1488529_PE1003369_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/gullaberg-spr-09614523",
+   "store": "IKEA Indonesia",
+   "sku": "096.145.23",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 1.9,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09241062",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "SONGESAND bed frame, brown/Luröy, 160x200 cm",
+   "name": "SONGESAND",
+   "priceIDR": 2799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/385/0638582_PE699001_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/songesand-spr-09241062",
+   "store": "IKEA Indonesia",
+   "sku": "092.410.62",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-39598611",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "RÅDMANSÖ bed frame, brown walnut effect/Luröy, 120x200 cm",
+   "name": "RÅDMANSÖ",
+   "priceIDR": 3499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/972/1397226_PE967510_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/radmanso-spr-39598611",
+   "store": "IKEA Indonesia",
+   "sku": "395.986.11",
+   "availability": "InStock",
+   "size": {
+    "w": 1.3,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-39626336",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "TAXÅSKLINT bed frame, pine/Luröy, 160x200 cm",
+   "name": "TAXÅSKLINT",
+   "priceIDR": 3599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/407/1540730_PE1017868_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/taxasklint-spr-39626336",
+   "store": "IKEA Indonesia",
+   "sku": "396.263.36",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-40280485",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "MANDAL bed frame with storage, birch/white, 160x200 cm",
+   "name": "MANDAL",
+   "priceIDR": 7999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/636/1463654_PE994484_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/mandal-art-40280485",
+   "store": "IKEA Indonesia",
+   "sku": "402.804.85",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30504631",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "KLEPPSTAD bed frame, white/Vissle beige, 160x200 cm",
+   "name": "KLEPPSTAD",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/353/1035340_PE840527_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-with-upholstered-headboard/kleppstad-art-30504631",
+   "store": "IKEA Indonesia",
+   "sku": "305.046.31",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-10587632",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "TÄRNKULLEN upholstered bed frame, lining cloth, 160x200 cm",
+   "name": "TÄRNKULLEN",
+   "priceIDR": 2899000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/234/1323425_PE942698_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-with-upholstered-headboard/tarnkullen-art-10587632",
+   "store": "IKEA Indonesia",
+   "sku": "105.876.32",
+   "availability": "InStock",
+   "size": {
+    "w": 1.7,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-29496665",
+   "archetype": "bed",
+   "rooms": [
+    "bedroom"
+   ],
+   "title": "TONSTAD bed frame with storage, oak veneer/Lönset, 180x200 cm",
+   "name": "TONSTAD",
+   "priceIDR": 12799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/596/1259651_PE926748_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/beds/bed-frames-and-beds-with-non-upholstered-headboards/tonstad-spr-29496665",
+   "store": "IKEA Indonesia",
+   "sku": "294.966.65",
+   "availability": "InStock",
+   "size": {
+    "w": 1.9,
+    "d": 2.12
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00556056",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "BRUKSVARA wardrobe with 2 doors and 2 drawers, brown, 79x57x201 cm",
+   "name": "BRUKSVARA",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/959/1195913_PE902652_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/bruksvara-art-00556056",
+   "store": "IKEA Indonesia",
+   "sku": "005.560.56",
+   "availability": "InStock",
+   "size": {
+    "w": 0.79,
+    "d": 0.57
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-10437237",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "KLEPPSTAD wardrobe with 2 doors, white, 79x55x176 cm",
+   "name": "KLEPPSTAD",
+   "priceIDR": 1799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/333/0733324_PE748781_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/kleppstad-art-10437237",
+   "store": "IKEA Indonesia",
+   "sku": "104.372.37",
+   "availability": "InStock",
+   "size": {
+    "w": 0.79,
+    "d": 0.55
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20400479",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "BRIMNES wardrobe with 2 doors, white, 78x50x190 cm",
+   "name": "BRIMNES",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/406/0140624_PE300605_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/brimnes-art-20400479",
+   "store": "IKEA Indonesia",
+   "sku": "204.004.79",
+   "availability": "InStock",
+   "size": {
+    "w": 0.78,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10456914",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "HAUGA wardrobe with sliding doors, beige, 118x55x199 cm",
+   "name": "HAUGA",
+   "priceIDR": 3999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/490/0949021_PE799474_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/hauga-art-10456914",
+   "store": "IKEA Indonesia",
+   "sku": "104.569.14",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 1.18,
+    "d": 0.55
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30453759",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "RAKKESTAD wardrobe with 2 doors, black-brown, 79x176 cm",
+   "name": "RAKKESTAD",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/803/0780372_PE760493_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/rakkestad-art-30453759",
+   "store": "IKEA Indonesia",
+   "sku": "304.537.59",
+   "availability": "InStock",
+   "size": {
+    "w": 0.79,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10339331",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "VUKU wardrobe, white, 74x51x149 cm",
+   "name": "VUKU",
+   "priceIDR": 299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/980/0498088_PE629449_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/vuku-art-10339331",
+   "store": "IKEA Indonesia",
+   "sku": "103.393.31",
+   "availability": "InStock",
+   "size": {
+    "w": 0.74,
+    "d": 0.51
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40483256",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "VIHALS wardrobe with 2 doors, white, 105x57x200 cm",
+   "name": "VIHALS",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/709/1070907_PE854805_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/vihals-art-40483256",
+   "store": "IKEA Indonesia",
+   "sku": "404.832.56",
+   "availability": "InStock",
+   "size": {
+    "w": 1.05,
+    "d": 0.57
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40627151",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "ANKARUDDEN wardrobe with sliding doors, oak effect, 98x60x190 cm",
+   "name": "ANKARUDDEN",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/867/1486730_PE1002550_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/ankarudden-art-40627151",
+   "store": "IKEA Indonesia",
+   "sku": "406.271.51",
+   "availability": "InStock",
+   "size": {
+    "w": 0.98,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-20573955",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "GULLABERG wardrobe, grey, 128x64x201 cm",
+   "name": "GULLABERG",
+   "priceIDR": 7999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/357/1435752_PE983925_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/gullaberg-art-20573955",
+   "store": "IKEA Indonesia",
+   "sku": "205.739.55",
+   "availability": "InStock",
+   "size": {
+    "w": 1.28,
+    "d": 0.64
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-50378684",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "MUSKEN wardrobe with 2 doors+3 drawers, white, 124x60x201 cm",
+   "name": "MUSKEN",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/903/0590338_PE673833_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/musken-art-50378684",
+   "store": "IKEA Indonesia",
+   "sku": "503.786.84",
+   "availability": "InStock",
+   "size": {
+    "w": 1.24,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20610806",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "KRONÖREN open wardrobe, pine, 90x49x181 cm",
+   "name": "KRONÖREN",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/074/1507445_PE1009340_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/kronoren-art-20610806",
+   "store": "IKEA Indonesia",
+   "sku": "206.108.06",
+   "availability": "InStock",
+   "size": {
+    "w": 0.9,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-50530610",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "VILHATTEN wardrobe with 2 doors and 2 drawers, oak effect, 98x57x190 cm",
+   "name": "VILHATTEN",
+   "priceIDR": 3999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/631/1163155_PE890133_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/vilhatten-art-50530610",
+   "store": "IKEA Indonesia",
+   "sku": "505.306.10",
+   "availability": "InStock",
+   "size": {
+    "w": 0.98,
+    "d": 0.57
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-30347617",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "VISTHUS wardrobe, grey/white, 122x59x216 cm",
+   "name": "VISTHUS",
+   "priceIDR": 5999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/923/0592302_PE674454_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/visthus-art-30347617",
+   "store": "IKEA Indonesia",
+   "sku": "303.476.17",
+   "availability": "InStock",
+   "size": {
+    "w": 1.22,
+    "d": 0.59
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70593828",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "RÅDMANSÖ wardrobe, brown walnut effect, 118x64x190 cm",
+   "name": "RÅDMANSÖ",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/841/1384140_PE962861_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/radmanso-art-70593828",
+   "store": "IKEA Indonesia",
+   "sku": "705.938.28",
+   "availability": "InStock",
+   "size": {
+    "w": 1.18,
+    "d": 0.64
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-20628241",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "FÅGELFJÄLLET wardrobe with 2 doors, black oak effect, 82x60x194 cm",
+   "name": "FÅGELFJÄLLET",
+   "priceIDR": 2999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/112/1511226_PE1009985_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/fagelfjallet-art-20628241",
+   "store": "IKEA Indonesia",
+   "sku": "206.282.41",
+   "availability": "InStock",
+   "size": {
+    "w": 0.82,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-50503292",
+   "archetype": "wardrobe",
+   "rooms": [
+    "bedroom",
+    "workspace"
+   ],
+   "title": "GURSKEN wardrobe, light beige, 49x55x186 cm",
+   "name": "GURSKEN",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/239/0923964_PE788459_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/wardrobes/solitaire-wardrobes/gursken-art-50503292",
+   "store": "IKEA Indonesia",
+   "sku": "505.032.92",
+   "availability": "InStock",
+   "size": {
+    "w": 0.49,
+    "d": 0.55
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00354275",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "MICKE desk, black-brown, 105x50 cm",
+   "name": "MICKE",
+   "priceIDR": 1799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/359/0735981_PE740299_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/micke-art-00354275",
+   "store": "IKEA Indonesia",
+   "sku": "003.542.75",
+   "availability": "InStock",
+   "size": {
+    "w": 1.05,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-20361152",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "MALM desk with pull-out panel, white, 151x65 cm",
+   "name": "MALM",
+   "priceIDR": 2599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/359/0735980_PE740314_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/malm-art-20361152",
+   "store": "IKEA Indonesia",
+   "sku": "203.611.52",
+   "availability": "InStock",
+   "size": {
+    "w": 1.51,
+    "d": 0.65
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09417264",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "KRILLE/LAGKAPTEN desk, white stained oak effect/white, 140x60 cm",
+   "name": "KRILLE/LAGKAPTEN",
+   "priceIDR": 1579000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/760/0976097_PE812995_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/krille-lagkapten-spr-09417264",
+   "store": "IKEA Indonesia",
+   "sku": "094.172.64",
+   "availability": "InStock",
+   "size": {
+    "w": 1.4,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-20588886",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "ALEX desk, dark grey, 100x48 cm",
+   "name": "ALEX",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/113/1411361_PE973100_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/alex-art-20588886",
+   "store": "IKEA Indonesia",
+   "sku": "205.888.86",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 0.48
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-09563651",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "LAGKAPTEN/SPÄND desk, black-brown/black, 120x60 cm",
+   "name": "LAGKAPTEN/SPÄND",
+   "priceIDR": 979000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/285/1328523_PE944850_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/lagkapten-spand-spr-09563651",
+   "store": "IKEA Indonesia",
+   "sku": "095.636.51",
+   "availability": "InStock",
+   "size": {
+    "w": 1.2,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-30609954",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "BRYTNING desk, white, 85x53x75 cm",
+   "name": "BRYTNING",
+   "priceIDR": 1299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/157/1515733_PE1011561_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/brytning-art-30609954",
+   "store": "IKEA Indonesia",
+   "sku": "306.099.54",
+   "availability": "InStock",
+   "size": {
+    "w": 0.85,
+    "d": 0.53
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-19416117",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "OLOV/LINNMON desk, dark grey/white, 100x60 cm",
+   "name": "OLOV/LINNMON",
+   "priceIDR": 1169000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/772/0977214_PE813459_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/olov-linnmon-spr-19416117",
+   "store": "IKEA Indonesia",
+   "sku": "194.161.17",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-50597083",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "ENKROKEN desk, white, 85x56x75 cm",
+   "name": "ENKROKEN",
+   "priceIDR": 799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/151/1515167_PE1011273_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/enkroken-art-50597083",
+   "store": "IKEA Indonesia",
+   "sku": "505.970.83",
+   "availability": "InStock",
+   "size": {
+    "w": 0.85,
+    "d": 0.56
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-50619805",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "BETESHÄST desk, light bamboo, 120x60 cm",
+   "name": "BETESHÄST",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/090/1509002_PE1009636_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/beteshast-art-50619805",
+   "store": "IKEA Indonesia",
+   "sku": "506.198.05",
+   "availability": "InStock",
+   "size": {
+    "w": 1.2,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70588110",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "SEGRARE desk sit/stand, dark grey, 110x60 cm",
+   "name": "SEGRARE",
+   "priceIDR": 1799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/589/1358982_PE954021_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/segrare-art-70588110",
+   "store": "IKEA Indonesia",
+   "sku": "705.881.10",
+   "availability": "InStock",
+   "size": {
+    "w": 1.1,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-10361746",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "LISABO desk, ash veneer, 118x45 cm",
+   "name": "LISABO",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/359/0735972_PE740306_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/lisabo-art-10361746",
+   "store": "IKEA Indonesia",
+   "sku": "103.617.46",
+   "availability": "InStock",
+   "size": {
+    "w": 1.18,
+    "d": 0.45
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-60493952",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "GLADHÖJDEN desk sit/stand, white, 100x60 cm",
+   "name": "GLADHÖJDEN",
+   "priceIDR": 3999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/594/1159429_PE888476_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/gladhojden-art-60493952",
+   "store": "IKEA Indonesia",
+   "sku": "604.939.52",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-60606256",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "ROSENTORP desk, white, 120x60 cm",
+   "name": "ROSENTORP",
+   "priceIDR": 3499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/854/1485430_PE1001971_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/rosentorp-art-60606256",
+   "store": "IKEA Indonesia",
+   "sku": "606.062.56",
+   "availability": "InStock",
+   "size": {
+    "w": 1.2,
+    "d": 0.6
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-70587691",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "FJÄLLBO desk, black, 140x70 cm",
+   "name": "FJÄLLBO",
+   "priceIDR": 2799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/427/1342778_PE949117_S4.webp",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/fjallbo-art-70587691",
+   "store": "IKEA Indonesia",
+   "sku": "705.876.91",
+   "availability": "InStock",
+   "size": {
+    "w": 1.4,
+    "d": 0.7
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-70493956",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "TORALD desk, white, 65x40 cm",
+   "name": "TORALD",
+   "priceIDR": 349000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/554/1055403_PE847976_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/torald-art-70493956",
+   "store": "IKEA Indonesia",
+   "sku": "704.939.56",
+   "availability": "InStock",
+   "size": {
+    "w": 0.65,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-50361754",
+   "archetype": "desk",
+   "rooms": [
+    "workspace",
+    "bedroom"
+   ],
+   "title": "MALM desk, white, 140x65 cm",
+   "name": "MALM",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/359/0735975_PE740309_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-desks/malm-art-50361754",
+   "store": "IKEA Indonesia",
+   "sku": "503.617.54",
+   "availability": "InStock",
+   "size": {
+    "w": 1.4,
+    "d": 0.65
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-19485337",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "OSKARSHAMN wing chair with footstool, Gunnared black/grey",
+   "name": "OSKARSHAMN",
+   "priceIDR": 6990000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/239/1123967_PE874940_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/oskarshamn-spr-19485337",
+   "store": "IKEA Indonesia",
+   "sku": "194.853.37",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-09590367",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "STRANDMON wing chair with footstool, Tommaboda deep beige",
+   "name": "STRANDMON",
+   "priceIDR": 5090000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/789/1478916_PE999888_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/strandmon-spr-09590367",
+   "store": "IKEA Indonesia",
+   "sku": "095.903.67",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00598216",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "ISMANTORP armchair, metal light grey-beige/Tibbleby light beige",
+   "name": "ISMANTORP",
+   "priceIDR": 995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/477/1447787_PE989258_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/ismantorp-art-00598216",
+   "store": "IKEA Indonesia",
+   "sku": "005.982.16",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10588844",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "GÄVLE easy chair, Diseröd red",
+   "name": "GÄVLE",
+   "priceIDR": 495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/236/1323639_PE942787_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/gavle-art-10588844",
+   "store": "IKEA Indonesia",
+   "sku": "105.888.44",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00423561",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "FRÖSET easy chair, white stained oak veneer",
+   "name": "FRÖSET",
+   "priceIDR": 1495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/241/0824154_PE776005_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/froset-art-00423561",
+   "store": "IKEA Indonesia",
+   "sku": "004.235.61",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-40623860",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "DYVLINGE swivel easy chair, Kelinge beige",
+   "name": "DYVLINGE",
+   "priceIDR": 2995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/574/1457402_PE992618_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/dyvlinge-art-40623860",
+   "store": "IKEA Indonesia",
+   "sku": "406.238.60",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-60561960",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "SKÅLBODA armchair, black",
+   "name": "SKÅLBODA",
+   "priceIDR": 1295000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/808/1180834_PE896474_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/skalboda-art-60561960",
+   "store": "IKEA Indonesia",
+   "sku": "605.619.60",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70535895",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "ÅRSUNDA armchair, Knisa light grey",
+   "name": "ÅRSUNDA",
+   "priceIDR": 1195000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/765/1276550_PE930953_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/arsunda-art-70535895",
+   "store": "IKEA Indonesia",
+   "sku": "705.358.95",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70564374",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "SALNÖ armchair, rattan",
+   "name": "SALNÖ",
+   "priceIDR": 1495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/050/1205085_PE906934_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/salno-art-70564374",
+   "store": "IKEA Indonesia",
+   "sku": "705.643.74",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00523612",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "OSKARSHAMN wing chair, Tibbleby beige/grey",
+   "name": "OSKARSHAMN",
+   "priceIDR": 4495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/181/1118157_PE872954_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/oskarshamn-art-00523612",
+   "store": "IKEA Indonesia",
+   "sku": "005.236.12",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-20613169",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "STRANDMON wing chair, Tibbleby yellow",
+   "name": "STRANDMON",
+   "priceIDR": 2995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/789/1478945_PE999898_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/strandmon-art-20613169",
+   "store": "IKEA Indonesia",
+   "sku": "206.131.69",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Bohemian",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-09551573",
+   "archetype": "chair",
+   "rooms": [
+    "living",
+    "bedroom"
+   ],
+   "title": "POÄNG low-back armchair, black-brown/Vissle black",
+   "name": "POÄNG",
+   "priceIDR": 1595000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/150/1315087_PE940398_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/armchairs-footstools-pouffes/armchairs/poang-spr-09551573",
+   "store": "IKEA Indonesia",
+   "sku": "095.515.73",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00617979",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "KARSKÄR chair, rubberwood",
+   "name": "KARSKÄR",
+   "priceIDR": 1295000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/240/1524036_PE1013901_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/karskar-art-00617979",
+   "store": "IKEA Indonesia",
+   "sku": "006.179.79",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-10635176",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "PINNTORP chair, blue stained/pine",
+   "name": "PINNTORP",
+   "priceIDR": 875000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/087/1508777_PE1009578_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/pinntorp-art-10635176",
+   "store": "IKEA Indonesia",
+   "sku": "106.351.76",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-19612811",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "SKÅLSTA chair, plastic beige/tubular metal/light grey-beige",
+   "name": "SKÅLSTA",
+   "priceIDR": 595000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/865/1486589_PE1002448_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/skalsta-spr-19612811",
+   "store": "IKEA Indonesia",
+   "sku": "196.128.11",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-00534333",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "FRÖSVI folding chair, white/Knisa light grey",
+   "name": "FRÖSVI",
+   "priceIDR": 795000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/901/1190178_PE900120_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/upholstered-chairs/frosvi-art-00534333",
+   "store": "IKEA Indonesia",
+   "sku": "005.343.33",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20617964",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "IKEA PS 2026 chair, bright blue/Knäbäck bright blue",
+   "name": "IKEA PS 2026",
+   "priceIDR": 1595000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/813/1481301_PE1000486_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/upholstered-chairs/ikea-ps-2026-art-20617964",
+   "store": "IKEA Indonesia",
+   "sku": "206.179.64",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-20605428",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "SANDSBERG chair, white",
+   "name": "SANDSBERG",
+   "priceIDR": 195000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/907/1390727_PE965548_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/sandsberg-art-20605428",
+   "store": "IKEA Indonesia",
+   "sku": "206.054.28",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20451906",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "BERGMUND chair frame, white",
+   "name": "BERGMUND",
+   "priceIDR": 1255000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/178/0817802_PE774146_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/upholstered-chairs/bergmund-art-20451906",
+   "store": "IKEA Indonesia",
+   "sku": "204.519.06",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10592761",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "VIHALS chair, white/Tibbleby beige-grey",
+   "name": "VIHALS",
+   "priceIDR": 695000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/704/1370476_PE958749_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/upholstered-chairs/vihals-art-10592761",
+   "store": "IKEA Indonesia",
+   "sku": "105.927.61",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-30457314",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "ODGER chair, anthracite",
+   "name": "ODGER",
+   "priceIDR": 1495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/396/0739669_PE741828_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/odger-art-30457314",
+   "store": "IKEA Indonesia",
+   "sku": "304.573.14",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30544873",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "SKOGSTA chair, black",
+   "name": "SKOGSTA",
+   "priceIDR": 1895000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/433/1243349_PE920580_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/skogsta-art-30544873",
+   "store": "IKEA Indonesia",
+   "sku": "305.448.73",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40512089",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "STEFAN chair, brown-black/Knisa grey/beige",
+   "name": "STEFAN",
+   "priceIDR": 695000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/681/1068137_PE852981_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/upholstered-chairs/stefan-art-40512089",
+   "store": "IKEA Indonesia",
+   "sku": "405.120.89",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30594033",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "TONSTAD chair, oak effect/Fridtuna light beige",
+   "name": "TONSTAD",
+   "priceIDR": 1295000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/935/1393519_PE966275_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/tonstad-art-30594033",
+   "store": "IKEA Indonesia",
+   "sku": "305.940.33",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40569226",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "LYCKAN chair, yellow/birch veneer",
+   "name": "LYCKAN",
+   "priceIDR": 1695000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/704/1370467_PE958731_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/lyckan-art-40569226",
+   "store": "IKEA Indonesia",
+   "sku": "405.692.26",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-40572672",
+   "archetype": "chair",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "ROSENTORP chair, white",
+   "name": "ROSENTORP",
+   "priceIDR": 895000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/345/1434529_PE983581_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/non-upholstered-chairs/rosentorp-art-40572672",
+   "store": "IKEA Indonesia",
+   "sku": "405.726.72",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-09488572",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "MALSKÄR/LOBERGET swivel chair, white/black",
+   "name": "MALSKÄR/LOBERGET",
+   "priceIDR": 599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/108/1110839_PE870604_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/malskar-loberget-spr-09488572",
+   "store": "IKEA Indonesia",
+   "sku": "094.885.72",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10573593",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "KRYLBO swivel chair, Tonerud blue",
+   "name": "KRYLBO",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/290/1429046_PE981760_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/krylbo-art-10573593",
+   "store": "IKEA Indonesia",
+   "sku": "105.735.93",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-30450911",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "ÖRFJÄLL chair frame, swivel, black",
+   "name": "ÖRFJÄLL",
+   "priceIDR": 350000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/368/0736826_PE740758_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/orfjall-art-30450911",
+   "store": "IKEA Indonesia",
+   "sku": "304.509.11",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40489395",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "MILLBERGET swivel chair, Murum black",
+   "name": "MILLBERGET",
+   "priceIDR": 1799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/201/1020142_PE831799_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/millberget-art-40489395",
+   "store": "IKEA Indonesia",
+   "sku": "404.893.95",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-40576585",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "MULLSJÖ swivel chair, Gräsnäs dark grey",
+   "name": "MULLSJÖ",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/762/1376248_PE960428_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/mullsjo-art-40576585",
+   "store": "IKEA Indonesia",
+   "sku": "405.765.85",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-20493548",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "RENBERGET swivel chair, Bomstad black",
+   "name": "RENBERGET",
+   "priceIDR": 799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/201/1020135_PE831794_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/renberget-art-20493548",
+   "store": "IKEA Indonesia",
+   "sku": "204.935.48",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-50564332",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "BLECKBERGET swivel chair, Klovsta white/orange-brown",
+   "name": "BLECKBERGET",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/056/1305672_PE939564_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/bleckberget-art-50564332",
+   "store": "IKEA Indonesia",
+   "sku": "505.643.32",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-50611847",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "BRYTNING swivel chair, Naggen beige",
+   "name": "BRYTNING",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/318/1531868_PE1015796_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/brytning-art-50611847",
+   "store": "IKEA Indonesia",
+   "sku": "506.118.47",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-70325519",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "KULLABERG swivel chair, black",
+   "name": "KULLABERG",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/247/0724718_PE734601_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/kullaberg-art-70325519",
+   "store": "IKEA Indonesia",
+   "sku": "703.255.19",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10503468",
+   "archetype": "chair",
+   "rooms": [
+    "workspace"
+   ],
+   "title": "SMÄLLEN swivel chair, black",
+   "name": "SMÄLLEN",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/962/1096271_PE864278_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/home-workspace/home-swivel-chairs/smallen-art-10503468",
+   "store": "IKEA Indonesia",
+   "sku": "105.034.68",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00635172",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "PINNTORP table, light brown stained/blue stained pine, 125x75 cm",
+   "name": "PINNTORP",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/087/1508776_PE1009577_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/pinntorp-art-00635172",
+   "store": "IKEA Indonesia",
+   "sku": "006.351.72",
+   "availability": "InStock",
+   "size": {
+    "w": 1.25,
+    "d": 0.75
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-09575135",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "HAUGA/FRÖSVI table and 2 folding chairs, white/white, 55/82/109x74 cm",
+   "name": "HAUGA/FRÖSVI",
+   "priceIDR": 3389000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/518/1351897_PE952032_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/hauga-frosvi-spr-09575135",
+   "store": "IKEA Indonesia",
+   "sku": "095.751.35",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 1.09,
+    "d": 0.74
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-20600770",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "ÅLHULT table, beige/brown, 80x74 cm",
+   "name": "ÅLHULT",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/032/1403274_PE969281_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/alhult-art-20600770",
+   "store": "IKEA Indonesia",
+   "sku": "206.007.70",
+   "availability": "InStock",
+   "size": {
+    "w": 0.8,
+    "d": 0.74
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-09564603",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "GUNDE/GUNDE table and 2 folding chairs, folding black/black, 67x67 cm",
+   "name": "GUNDE/GUNDE",
+   "priceIDR": 1099000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/526/1352626_PE952211_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/gunde-gunde-spr-09564603",
+   "store": "IKEA Indonesia",
+   "sku": "095.646.03",
+   "availability": "InStock",
+   "size": {
+    "w": 0.67,
+    "d": 0.67
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00587538",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "NÄSINGE gateleg table with storage, white, 48/104/159x85 cm",
+   "name": "NÄSINGE",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/936/1393634_PE966297_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/nasinge-art-00587538",
+   "store": "IKEA Indonesia",
+   "sku": "005.875.38",
+   "availability": "InStock",
+   "size": {
+    "w": 1.59,
+    "d": 0.85
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-39648022",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "PERJOHAN/PINNTORP table with 2 chairs and bench",
+   "name": "PERJOHAN/PINNTORP",
+   "priceIDR": 6768000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/172/1517236_PE1012172_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/perjohan-pinntorp-spr-39648022",
+   "store": "IKEA Indonesia",
+   "sku": "396.480.22",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40419265",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "SKOGSTA dining table, acacia/black, 235x100 cm",
+   "name": "SKOGSTA",
+   "priceIDR": 9499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/999/1499941_PE1006841_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/skogsta-art-40419265",
+   "store": "IKEA Indonesia",
+   "sku": "404.192.65",
+   "availability": "InStock",
+   "size": {
+    "w": 2.35,
+    "d": 1
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40620569",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "NORRMJÖLE table, black marble effect/black, 105 cm",
+   "name": "NORRMJÖLE",
+   "priceIDR": 2499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/418/1541865_PE1018218_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/norrmjole-art-40620569",
+   "store": "IKEA Indonesia",
+   "sku": "406.205.69",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-60608236",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "BERGSHYTTAN table, tinted effect birch veneer, 240x93 cm",
+   "name": "BERGSHYTTAN",
+   "priceIDR": 5999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/110/1411085_PE973074_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/bergshyttan-art-60608236",
+   "store": "IKEA Indonesia",
+   "sku": "606.082.36",
+   "availability": "InStock",
+   "size": {
+    "w": 2.4,
+    "d": 0.93
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-59568830",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "KYRRE/NORDEN table and 4 stools, white/birch, 26/89/152 cm",
+   "name": "KYRRE/NORDEN",
+   "priceIDR": 5995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/284/1328454_PE944789_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/kyrre-norden-spr-59568830",
+   "store": "IKEA Indonesia",
+   "sku": "595.688.30",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-59629225",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "MARIUS/SANDSBERG table and 4 stools, black black/black, 110x67 cm",
+   "name": "MARIUS/SANDSBERG",
+   "priceIDR": 1048600,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/177/1517759_PE1012437_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/marius-sandsberg-spr-59629225",
+   "store": "IKEA Indonesia",
+   "sku": "596.292.25",
+   "availability": "InStock",
+   "size": {
+    "w": 1.1,
+    "d": 0.67
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-70630449",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "TJÄRKIL table, black/walnut veneer, 180x100 cm",
+   "name": "TJÄRKIL",
+   "priceIDR": 5999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/240/1524094_PE1013906_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/tjarkil-art-70630449",
+   "store": "IKEA Indonesia",
+   "sku": "706.304.49",
+   "availability": "InStock",
+   "size": {
+    "w": 1.8,
+    "d": 1
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-60467887",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "STENARED dining table, stone effect quartz/bamboo, 140x75 cm",
+   "name": "STENARED",
+   "priceIDR": 6499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/881/0788199_PE763525_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/stenared-art-60467887",
+   "store": "IKEA Indonesia",
+   "sku": "604.678.87",
+   "availability": "InStock",
+   "size": {
+    "w": 1.4,
+    "d": 0.75
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-80565759",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "SKANSNÄS extendable table, brown beech/veneer, 150/205x90 cm",
+   "name": "SKANSNÄS",
+   "priceIDR": 17999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/623/1262376_PE927062_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/skansnas-art-80565759",
+   "store": "IKEA Indonesia",
+   "sku": "805.657.59",
+   "availability": "InStock",
+   "size": {
+    "w": 2.05,
+    "d": 0.9
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-70400896",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "STRANDTORP extendable table, brown, 150/205/260x95 cm",
+   "name": "STRANDTORP",
+   "priceIDR": 7999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/269/0926900_PE789586_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/strandtorp-art-70400896",
+   "store": "IKEA Indonesia",
+   "sku": "704.008.96",
+   "availability": "InStock",
+   "size": {
+    "w": 2.6,
+    "d": 0.95
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-20600063",
+   "archetype": "dining_table",
+   "rooms": [
+    "dining",
+    "kitchen"
+   ],
+   "title": "TONSTAD table, off-white, 150x80 cm",
+   "name": "TONSTAD",
+   "priceIDR": 4999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/935/1393508_PE966264_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-tables/tables/tonstad-art-20600063",
+   "store": "IKEA Indonesia",
+   "sku": "206.000.63",
+   "availability": "InStock",
+   "size": {
+    "w": 1.5,
+    "d": 0.8
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00492818",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "BILLY shelf, oak effect, 36x26 cm",
+   "name": "BILLY",
+   "priceIDR": 212500,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/971/1097128_PE864756_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/billy-art-00492818",
+   "store": "IKEA Indonesia",
+   "sku": "004.928.18",
+   "availability": "InStock",
+   "size": {
+    "w": 0.36,
+    "d": 0.26
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00168527",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "LERBERG shelf unit, white, 35x148 cm",
+   "name": "LERBERG",
+   "priceIDR": 249000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/222/0022216_PE235922_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/lerberg-art-00168527",
+   "store": "IKEA Indonesia",
+   "sku": "001.685.27",
+   "availability": "InStock",
+   "size": {
+    "w": 0.35,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10616899",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "IKEA PS 2026 shelving unit, pine, 160x35x161 cm",
+   "name": "IKEA PS 2026",
+   "priceIDR": 3999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/791/1479132_PE999932_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/ikea-ps-2026-art-10616899",
+   "store": "IKEA Indonesia",
+   "sku": "106.168.99",
+   "availability": "InStock",
+   "size": {
+    "w": 1.6,
+    "d": 0.35
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-10351686",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "BRIMNES bookcase, white, 60x190 cm",
+   "name": "BRIMNES",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/902/1590279_PE1038918_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/brimnes-art-10351686",
+   "store": "IKEA Indonesia",
+   "sku": "103.516.86",
+   "availability": "InStock",
+   "size": {
+    "w": 0.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-40508855",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "SKRUVBY bookcase, white, 60x140 cm",
+   "name": "SKRUVBY",
+   "priceIDR": 1599000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/902/1590276_PE1038915_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/skruvby-art-40508855",
+   "store": "IKEA Indonesia",
+   "sku": "405.088.55",
+   "availability": "InStock",
+   "size": {
+    "w": 0.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10339294",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "FJÄLLBO shelving unit, black, 100x136 cm",
+   "name": "FJÄLLBO",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/733/0473388_PE614539_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/fjallbo-art-10339294",
+   "store": "IKEA Indonesia",
+   "sku": "103.392.94",
+   "availability": "InStock",
+   "size": {
+    "w": 1,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10483880",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "BAGGEBO bookcase, white, 50x25x160 cm",
+   "name": "BAGGEBO",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/902/1590284_PE1038923_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/baggebo-art-10483880",
+   "store": "IKEA Indonesia",
+   "sku": "104.838.80",
+   "availability": "InStock",
+   "size": {
+    "w": 0.5,
+    "d": 0.25
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-30597649",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "FÄRJKARL bookcase, off-white, 77x39x188 cm",
+   "name": "FÄRJKARL",
+   "priceIDR": 2999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/903/1590310_PE1038949_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/farjkarl-art-30597649",
+   "store": "IKEA Indonesia",
+   "sku": "305.976.49",
+   "availability": "InStock",
+   "size": {
+    "w": 0.77,
+    "d": 0.39
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10378006",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "FLYSTA shelving unit, white, 69x132 cm",
+   "name": "FLYSTA",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/216/0521628_PE642869_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/flysta-art-10378006",
+   "store": "IKEA Indonesia",
+   "sku": "103.780.06",
+   "availability": "InStock",
+   "size": {
+    "w": 0.69,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-60360730",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "GERSBY bookcase, white, 60x180 cm",
+   "name": "GERSBY",
+   "priceIDR": 699000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/902/1590290_PE1038929_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/gersby-art-60360730",
+   "store": "IKEA Indonesia",
+   "sku": "603.607.30",
+   "availability": "InStock",
+   "size": {
+    "w": 0.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-60487814",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "EKENABBEN open shelving unit, aspen/white, 70x34x154 cm",
+   "name": "EKENABBEN",
+   "priceIDR": 999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/293/1029351_PE835758_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/ekenabben-art-60487814",
+   "store": "IKEA Indonesia",
+   "sku": "604.878.14",
+   "availability": "InStock",
+   "size": {
+    "w": 0.7,
+    "d": 0.34
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-70452296",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "HEMNES bookcase, black-brown/light brown, 90x198 cm",
+   "name": "HEMNES",
+   "priceIDR": 3999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/902/1590299_PE1038938_S4.webp",
+   "url": "https://www.ikea.co.id/en/products/storage/bookcases/hemnes-art-70452296",
+   "store": "IKEA Indonesia",
+   "sku": "704.522.96",
+   "availability": "InStock",
+   "size": {
+    "w": 0.9,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-90570251",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "SÅGMÄSTARE shelving unit, light grey-blue, 83x36x128 cm",
+   "name": "SÅGMÄSTARE",
+   "priceIDR": 799000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/912/1391204_PE965712_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/sagmastare-art-90570251",
+   "store": "IKEA Indonesia",
+   "sku": "905.702.51",
+   "availability": "InStock",
+   "size": {
+    "w": 0.83,
+    "d": 0.36
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-30483290",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "VIHALS shelving unit with 4 shelves, white, 95x37x90 cm",
+   "name": "VIHALS",
+   "priceIDR": 1499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/355/1035576_PE838114_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/vihals-art-30483290",
+   "store": "IKEA Indonesia",
+   "sku": "304.832.90",
+   "availability": "InStock",
+   "size": {
+    "w": 0.95,
+    "d": 0.37
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-60168529",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "LERBERG shelf unit, white, 60x148 cm",
+   "name": "LERBERG",
+   "priceIDR": 299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/222/0022215_PE235920_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/lerberg-art-60168529",
+   "store": "IKEA Indonesia",
+   "sku": "601.685.29",
+   "availability": "InStock",
+   "size": {
+    "w": 0.6,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09197422",
+   "archetype": "shelf",
+   "rooms": [
+    "living",
+    "bedroom",
+    "workspace",
+    "dining",
+    "kitchen"
+   ],
+   "title": "KALLAX shelving unit with 4 inserts, white stained oak effect, 147x147 cm",
+   "name": "KALLAX",
+   "priceIDR": 3479000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/802/0480225_PE618797_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/storage/open-storage/kallax-spr-09197422",
+   "store": "IKEA Indonesia",
+   "sku": "091.974.22",
+   "availability": "InStock",
+   "size": {
+    "w": 1.47,
+    "d": 0.4
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-50624604",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "HUSBYÅN wall cabinet, grey-beige, 28x11x37.5 cm",
+   "name": "HUSBYÅN",
+   "priceIDR": 299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/990/1499034_PE1006497_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/husbyan-art-50624604",
+   "store": "IKEA Indonesia",
+   "sku": "506.246.04",
+   "availability": "InStock",
+   "size": {
+    "w": 0.28,
+    "d": 0.11
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-10424254",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "TEVALEN storage unit, white, 36x17x33 cm",
+   "name": "TEVALEN",
+   "priceIDR": 99900,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/364/0636433_PE697883_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/tevalen-art-10424254",
+   "store": "IKEA Indonesia",
+   "sku": "104.242.54",
+   "availability": "InStock",
+   "size": {
+    "w": 0.36,
+    "d": 0.17
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10453883",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "VESKEN corner shelf unit, white, 33x33x71 cm",
+   "name": "VESKEN",
+   "priceIDR": 129000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/319/0831999_PE777543_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/vesken-art-10453883",
+   "store": "IKEA Indonesia",
+   "sku": "104.538.83",
+   "availability": "InStock",
+   "size": {
+    "w": 0.33,
+    "d": 0.33
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-70573175",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "IVÖSJÖN cabinet with doors, green, 33x34x99 cm",
+   "name": "IVÖSJÖN",
+   "priceIDR": 399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/834/1383429_PE962557_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/ivosjon-art-70573175",
+   "store": "IKEA Indonesia",
+   "sku": "705.731.75",
+   "availability": "InStock",
+   "size": {
+    "w": 0.33,
+    "d": 0.34
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-90601653",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "HUSBYÅN wall cabinet, dark green, 28x11x37.5 cm",
+   "name": "HUSBYÅN",
+   "priceIDR": 299000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/990/1499033_PE1006498_S4.webp",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/husbyan-art-90601653",
+   "store": "IKEA Indonesia",
+   "sku": "906.016.53",
+   "availability": "InStock",
+   "size": {
+    "w": 0.28,
+    "d": 0.11
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-20307867",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "VESKEN shelf unit, white, 37x23x101 cm",
+   "name": "VESKEN",
+   "priceIDR": 199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/193/0419316_PE576206_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/vesken-art-20307867",
+   "store": "IKEA Indonesia",
+   "sku": "203.078.67",
+   "availability": "InStock",
+   "size": {
+    "w": 0.37,
+    "d": 0.23
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10450808",
+   "archetype": "shelf",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "VESKEN shelf unit, black, 37x23x101 cm",
+   "name": "VESKEN",
+   "priceIDR": 199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/174/0717495_PE731272_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-small-furniture/vesken-art-10450808",
+   "store": "IKEA Indonesia",
+   "sku": "104.508.08",
+   "availability": "InStock",
+   "size": {
+    "w": 0.37,
+    "d": 0.23
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-00605250",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "MARIUS stool, red-brown, 45 cm",
+   "name": "MARIUS",
+   "priceIDR": 99900,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/888/1388828_PE964993_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/marius-art-00605250",
+   "store": "IKEA Indonesia",
+   "sku": "006.052.50",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10610086",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "TRÄNNÖ stool, white/pine",
+   "name": "TRÄNNÖ",
+   "priceIDR": 279000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/039/1403936_PE969898_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/tranno-art-10610086",
+   "store": "IKEA Indonesia",
+   "sku": "106.100.86",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-00571537",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "IBBARBO stool, dark grey",
+   "name": "IBBARBO",
+   "priceIDR": 199000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/676/1367673_PE957380_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/ibbarbo-art-00571537",
+   "store": "IKEA Indonesia",
+   "sku": "005.715.37",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40161595",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "DALFRED bar stool, black, 63-74 cm",
+   "name": "DALFRED",
+   "priceIDR": 995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/274/0727486_PE735711_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/bar-stools/dalfred-art-40161595",
+   "store": "IKEA Indonesia",
+   "sku": "401.615.95",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Industrial",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40501321",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "PERJOHAN stool with storage, pine",
+   "name": "PERJOHAN",
+   "priceIDR": 649000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/182/1018243_PE831131_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/perjohan-art-40501321",
+   "store": "IKEA Indonesia",
+   "sku": "405.013.21",
+   "availability": "OutOfStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Japandi"
+   ]
+  },
+  {
+   "id": "ikea-30605282",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "GULTARP stool, anthracite/Remmarn anthracite",
+   "name": "GULTARP",
+   "priceIDR": 229000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/788/1478835_PE999841_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/gultarp-art-30605282",
+   "store": "IKEA Indonesia",
+   "sku": "306.052.82",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-30162307",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "GLENN bar stool, counter height white/chrome-plated, 66 cm",
+   "name": "GLENN",
+   "priceIDR": 1795000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/280/0728083_PE736048_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/bar-stools/glenn-art-30162307",
+   "store": "IKEA Indonesia",
+   "sku": "301.623.07",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Industrial"
+   ]
+  },
+  {
+   "id": "ikea-20618195",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "ROSENTORP bar stool with backrest, counter height/white, 63 cm",
+   "name": "ROSENTORP",
+   "priceIDR": 1495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/345/1434524_PE983576_S4.webp",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/bar-stools/rosentorp-art-20618195",
+   "store": "IKEA Indonesia",
+   "sku": "206.181.95",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-60560437",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "DOMSTEN stool, orange/pine",
+   "name": "DOMSTEN",
+   "priceIDR": 499000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/762/1176290_PE894990_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/domsten-art-60560437",
+   "store": "IKEA Indonesia",
+   "sku": "605.604.37",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Bohemian"
+   ]
+  },
+  {
+   "id": "ikea-50597059",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "RÄVSTEN bar stool, counter height rubberwood, 62 cm",
+   "name": "RÄVSTEN",
+   "priceIDR": 695000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/475/1447505_PE989135_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/bar-stools/ravsten-art-50597059",
+   "store": "IKEA Indonesia",
+   "sku": "505.970.59",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-00652430",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "STIG bar stool with backrest, counter height white/white, 63 cm",
+   "name": "STIG",
+   "priceIDR": 395000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/539/1553910_PE1023760_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/bar-stools/stig-art-00652430",
+   "store": "IKEA Indonesia",
+   "sku": "006.524.30",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00617960",
+   "archetype": "stool",
+   "rooms": [
+    "kitchen",
+    "dining"
+   ],
+   "title": "IKEA PS 2026 stool, height adjustable birch/clear lacquered bright blue",
+   "name": "IKEA PS 2026",
+   "priceIDR": 1999000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/813/1481302_PE1000487_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/dining-seating/stools/ikea-ps-2026-art-00617960",
+   "store": "IKEA Indonesia",
+   "sku": "006.179.60",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-20470858",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "NYSJÖN wash-basin cabinet, white, 50x83 cm",
+   "name": "NYSJÖN",
+   "priceIDR": 995000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/716/0971605_PE811407_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-furnitures/nysjon-art-20470858",
+   "store": "IKEA Indonesia",
+   "sku": "204.708.58",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 0.83,
+    "d": 0.5
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-10545086",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "ORRSJÖN wash-basin, white, 82x49 cm",
+   "name": "ORRSJÖN",
+   "priceIDR": 2495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/954/1195417_PE902407_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/orrsjon-art-10545086",
+   "store": "IKEA Indonesia",
+   "sku": "105.450.86",
+   "availability": "InStock",
+   "size": {
+    "w": 0.82,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09527620",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "BACKSJÖN wash-basin with water trap, white, 80x48 cm",
+   "name": "BACKSJÖN",
+   "priceIDR": 3045000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/987/1198721_PE904191_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/backsjon-spr-09527620",
+   "store": "IKEA Indonesia",
+   "sku": "095.276.20",
+   "availability": "InStock",
+   "size": {
+    "w": 0.8,
+    "d": 0.48
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-09546911",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "TVÄLLEN wash-basin with water trap, white, 64x43 cm",
+   "name": "TVÄLLEN",
+   "priceIDR": 1600000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/645/1064599_PE851707_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/tvallen-spr-09546911",
+   "store": "IKEA Indonesia",
+   "sku": "095.469.11",
+   "availability": "InStock",
+   "size": {
+    "w": 0.64,
+    "d": 0.43
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-39632894",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "LERSJÖN/ÄNGSJÖN wash-stnd w drawers/wash-basin, high-gloss white/white marble effect, 62x49x79 cm",
+   "name": "LERSJÖN/ÄNGSJÖN",
+   "priceIDR": 8244000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/502/1550211_PE1022174_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-furnitures/lersjon-angsjon-spr-39632894",
+   "store": "IKEA Indonesia",
+   "sku": "396.328.94",
+   "availability": "InStock",
+   "size": {
+    "w": 0.62,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Modern",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "ikea-20545401",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "RUTSJÖN wash-basin, white, 82x49 cm",
+   "name": "RUTSJÖN",
+   "priceIDR": 2495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/954/1195420_PE902414_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/rutsjon-art-20545401",
+   "store": "IKEA Indonesia",
+   "sku": "205.454.01",
+   "availability": "InStock",
+   "size": {
+    "w": 0.82,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40581006",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "VÄSTERSJÖN countertop wash-basin, white, 40 cm",
+   "name": "VÄSTERSJÖN",
+   "priceIDR": 2495000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/345/1334541_PE946779_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/vastersjon-art-40581006",
+   "store": "IKEA Indonesia",
+   "sku": "405.810.06",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-00597293",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "IVÖSJÖN wash-basin base cabinet, with sliding doors/green, 50x33x57 cm",
+   "name": "IVÖSJÖN",
+   "priceIDR": 399000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/060/1406006_PE970729_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-furnitures/ivosjon-art-00597293",
+   "store": "IKEA Indonesia",
+   "sku": "005.972.93",
+   "availability": "OutOfStock",
+   "size": {
+    "w": 0.5,
+    "d": 0.33
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-09517032",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "ORRSJÖN semi-recessed wash-basin w watr trp, white, 50x44 cm",
+   "name": "ORRSJÖN",
+   "priceIDR": 2245000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/995/1199512_PE904548_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/orrsjon-spr-09517032",
+   "store": "IKEA Indonesia",
+   "sku": "095.170.32",
+   "availability": "InStock",
+   "size": {
+    "w": 0.5,
+    "d": 0.44
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-10549942",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "BACKSJÖN wash-basin, white, 80x48 cm",
+   "name": "BACKSJÖN",
+   "priceIDR": 2795000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/954/1195401_PE902401_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/backsjon-art-10549942",
+   "store": "IKEA Indonesia",
+   "sku": "105.499.42",
+   "availability": "InStock",
+   "size": {
+    "w": 0.8,
+    "d": 0.48
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-39615936",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "TVÄLLEN/ENHET wash-stnd w doors/wash-basin, white, 64x43x65 cm",
+   "name": "TVÄLLEN/ENHET",
+   "priceIDR": 3100000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/858/1485801_PE1002171_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-furnitures/tvallen-enhet-spr-39615936",
+   "store": "IKEA Indonesia",
+   "sku": "396.159.36",
+   "availability": "InStock",
+   "size": {
+    "w": 0.64,
+    "d": 0.43
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-49632898",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "LERSJÖN/ÄNGSJÖN wash-stnd w drawers/wash-basin, oak effect/white marble effect, 62x49x79 cm",
+   "name": "LERSJÖN/ÄNGSJÖN",
+   "priceIDR": 8044000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/502/1550213_PE1022176_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/bathroom-furniture/bathroom-furnitures/lersjon-angsjon-spr-49632898",
+   "store": "IKEA Indonesia",
+   "sku": "496.328.98",
+   "availability": "InStock",
+   "size": {
+    "w": 0.62,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Japandi",
+    "Scandinavian",
+    "Modern"
+   ]
+  },
+  {
+   "id": "ikea-40545400",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "RUTSJÖN wash-basin, white, 62x49 cm",
+   "name": "RUTSJÖN",
+   "priceIDR": 2295000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/954/1195418_PE902412_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/rutsjon-art-40545400",
+   "store": "IKEA Indonesia",
+   "sku": "405.454.00",
+   "availability": "InStock",
+   "size": {
+    "w": 0.62,
+    "d": 0.49
+   },
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ]
+  },
+  {
+   "id": "ikea-60567575",
+   "archetype": "sink",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "RÄNNILEN wash-basin plug, pop up",
+   "name": "RÄNNILEN",
+   "priceIDR": 150000,
+   "image": "https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/943/1194376_PE901910_S4.jpg",
+   "url": "https://www.ikea.co.id/en/products/water-fixtures-and-fittings/bathroom-sinks/rannilen-art-60567575",
+   "store": "IKEA Indonesia",
+   "sku": "605.675.75",
+   "availability": "InStock",
+   "size": null,
+   "source": "ikea-jsonld",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ]
+  },
+  {
+   "id": "mkt-bathtub-0",
+   "archetype": "bathtub",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "ENCHANTING Bathtub Free Standing Kamar Mandi BathTub Acrylic White/Black White E8624",
+   "name": "ENCHANTING Bathtub Free Standing Kamar Mandi BathTub Acrylic White/Black White E8624",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shop-id.tokopedia.com/view/product/1730513045156824122",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-bathtub-1",
+   "archetype": "bathtub",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "Bathtub Kamar Mandi Premium Europe Enchanting Material Akrilik E8618",
+   "name": "Bathtub Kamar Mandi Premium Europe Enchanting Material Akrilik E8618",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shop-id.tokopedia.com/view/product/1729594217386969146",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-0",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "Smart Toilet Kloset Duduk Automatic Rough-in 30 cm / 50 cm Tidal TD139/TD163",
+   "name": "Smart Toilet Kloset Duduk Automatic Rough-in 30 cm / 50 cm Tidal TD139/TD163",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shop-id.tokopedia.com/view/product/1729658063097201722",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-1",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "KLOSET DUDUK TOTO CW422J AS 47CM / CLOSET - TOILET DUDUK TOTO",
+   "name": "KLOSET DUDUK TOTO CW422J AS 47CM / CLOSET - TOILET DUDUK TOTO",
+   "priceIDR": null,
+   "image": "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/dfe90bf42cc54a48b8401eb1ba8b497e~tplv-o3syd03w52-resize-webp:260:260.webp?dr=15582&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=7745054a&idc=my&from=1826719393",
+   "url": "https://shop-id.tokopedia.com/view/product/1729595133371320334",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-2",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "Smart Toilet Kloset Duduk Automatic Europe Enchanting E015",
+   "name": "Smart Toilet Kloset Duduk Automatic Europe Enchanting E015",
+   "priceIDR": null,
+   "image": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2024/2/24/451241e2-25c9-4139-a450-559dec81772f.jpg~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=2408c917&shcp=32ce9e9e&idc=my3&from=604555543",
+   "url": "https://shop-id.tokopedia.com/view/product/1731686739919996858",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-3",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "TIDAL Toilet Kloset Duduk Siphonic Soft Close Powerful Flush TD133",
+   "name": "TIDAL Toilet Kloset Duduk Siphonic Soft Close Powerful Flush TD133",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shop-id.tokopedia.com/view/product/1731357852325610554",
+   "store": "Tokopedia",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-4",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "Blackwhite Kloset Closet Toilet WC Duduk Juliet Back To Wall Rimless Two Piece Dual Flush Soft Close",
+   "name": "Blackwhite Kloset Closet Toilet WC Duduk Juliet Back To Wall Rimless Two Piece Dual Flush Soft Close",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shopee.co.id/BLACKWHITE-Kloset-Closet-Toilet-WC-Duduk-Juliet-Back-To-Wall-White-Rimless-Two-Piece-Dual-Flush-Soft-Close-i.1085381735.43017912719",
+   "store": "Shopee",
+   "styles": [
+    "Minimalist",
+    "Scandinavian"
+   ],
+   "source": "meta-web-search"
+  },
+  {
+   "id": "mkt-toilet-5",
+   "archetype": "toilet",
+   "rooms": [
+    "bathroom"
+   ],
+   "title": "KLOSET DUDUK TOILET TRILLIUN Chrysolite Opal Sapphira Jasper Andaluzite Amethyst Harvest & Ruby",
+   "name": "KLOSET DUDUK TOILET TRILLIUN Chrysolite Opal Sapphira Jasper Andaluzite Amethyst Harvest & Ruby",
+   "priceIDR": null,
+   "image": null,
+   "url": "https://shopee.co.id/TOILET-KLOSET-DUDUK-OTOMATIS-OPAL-TRILLIUN-i.143915387.19082440227",
+   "store": "Shopee",
+   "styles": [
+    "Minimalist",
+    "Modern"
+   ],
+   "source": "meta-web-search"
+  }
+ ]
+}
