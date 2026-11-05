@@ -1,9 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Icon from './Icon.jsx'
 import { Avatar } from './UserMenu.jsx'
 
-const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent)
+const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1)
 const isStandalone = () => window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true
+
+// Manual steps for when the browser offers no install dialog (iOS, already used, dismissed, other browsers).
+function installSteps(t) {
+  const ua = navigator.userAgent
+  if (isIOS()) {
+    return /CriOS/i.test(ua)
+      ? t('In Chrome, tap Share (the square with an arrow) in the address bar, then “Add to Home Screen”.', 'Di Chrome, ketuk Bagikan (kotak dengan panah) di address bar, lalu “Tambahkan ke Layar Utama”.')
+      : t('In Safari, tap Share, then “Add to Home Screen”.', 'Di Safari, ketuk Bagikan, lalu “Tambahkan ke Layar Utama”.')
+  }
+  if (/android/i.test(ua)) return t('Open the browser menu ⋮ (top right), then “Install app” or “Add to Home screen”.', 'Buka menu browser ⋮ (kanan atas), lalu “Instal aplikasi” atau “Tambahkan ke layar utama”.')
+  return t('Click the install icon at the right of the address bar, or open the browser menu ⋮ → “Install Tataloka”.', 'Klik ikon instal di kanan address bar, atau buka menu browser ⋮ → “Instal Tataloka”.')
+}
 
 // "Account" tab on phones: profile, language, install, legal links, log out.
 export default function AccountSheet({ locale, setLocale, user, live, credits, canInstall, onInstall, onLogin, onRegister, onSaved, onCredits, onLogout, onClose }) {
@@ -13,7 +25,13 @@ export default function AccountSheet({ locale, setLocale, user, live, credits, c
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [onClose])
-  const iosHint = !canInstall && isIOS() && !isStandalone()
+  // null → not asked yet; 'asking' while the browser's dialog is open; then onInstall's outcome
+  const [installState, setInstallState] = useState(null)
+  const offerInstall = !isStandalone()
+  async function installClick() {
+    setInstallState('asking')
+    setInstallState(await onInstall())
+  }
 
   return (
     <>
@@ -59,16 +77,18 @@ export default function AccountSheet({ locale, setLocale, user, live, credits, c
           </div>
         </div>
 
-        {(canInstall || iosHint) && (
-          <div className="install-card">
-            <Icon name="install" size={22} />
+        {offerInstall && (
+          <div className="install-card" aria-live="polite">
+            <Icon name={installState === 'accepted' ? 'check' : 'install'} size={22} />
             <div>
-              <strong>{t('Install the app', 'Pasang aplikasi')}</strong>
-              <span>{canInstall
-                ? t('Add Tataloka to your home screen — opens full screen, like an app.', 'Tambahkan Tataloka ke layar utama — terbuka layar penuh, seperti aplikasi.')
-                : t('In Safari, tap Share, then “Add to Home Screen”.', 'Di Safari, ketuk Bagikan, lalu “Tambahkan ke Layar Utama”.')}</span>
+              <strong>{installState === 'accepted' ? t('Tataloka is installed', 'Tataloka sudah terpasang') : t('Install the app', 'Pasang aplikasi')}</strong>
+              <span>{installState === 'accepted'
+                ? t('Open it from your home screen.', 'Buka dari layar utama.')
+                : canInstall && !installState
+                  ? t('Add Tataloka to your home screen — opens full screen, like an app.', 'Tambahkan Tataloka ke layar utama — terbuka layar penuh, seperti aplikasi.')
+                  : (installState === 'asking' ? t('No install window? ', 'Jendela instal tidak muncul? ') : '') + installSteps(t)}</span>
             </div>
-            {canInstall && <button className="btn btn-brand btn-sm" onClick={onInstall}>{t('Install', 'Pasang')}</button>}
+            {canInstall && !installState && <button className="btn btn-brand btn-sm" onClick={installClick}>{t('Install', 'Pasang')}</button>}
           </div>
         )}
 

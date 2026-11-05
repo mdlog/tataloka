@@ -13,6 +13,16 @@ const standalone = window.matchMedia?.('(display-mode: standalone)').matches || 
 if (standalone && window.location.pathname === '/' && !window.location.hash) window.location.replace('/app')
 const isApp = /^\/app(\/|$)/.test(window.location.pathname)
 
+// Chrome's "Install app" event can fire before the lazily loaded app has mounted:
+// keep it here for the Account sheet's Install button (see App.jsx).
+if (isApp) {
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault()
+    window.__tatalokaInstall = e
+    window.dispatchEvent(new Event('tataloka-install-ready'))
+  })
+}
+
 // Same splash as index.html, kept while the page's code loads.
 function Splash() {
   return (

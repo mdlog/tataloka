@@ -103,19 +103,29 @@ export default function App() {
     window.addEventListener('tataloka-no-credits', onEmpty)
     return () => { window.removeEventListener('tataloka-credits', onLeft); window.removeEventListener('tataloka-no-credits', onEmpty) }
   }, [])
-  // "Install app" (Android/desktop Chrome): keep the browser's prompt for the Account sheet.
+  // "Install app" (Android/desktop Chrome): main.jsx keeps the browser's prompt, which may
+  // arrive before or after this mounts, for the Account sheet.
   useEffect(() => {
-    const onPrompt = e => { e.preventDefault(); setInstallPrompt(e) }
-    const onInstalled = () => setInstallPrompt(null)
-    window.addEventListener('beforeinstallprompt', onPrompt)
+    const take = () => { if (window.__tatalokaInstall) setInstallPrompt(window.__tatalokaInstall) }
+    const onInstalled = () => { window.__tatalokaInstall = null; setInstallPrompt(null) }
+    take()
+    window.addEventListener('tataloka-install-ready', take)
     window.addEventListener('appinstalled', onInstalled)
-    return () => { window.removeEventListener('beforeinstallprompt', onPrompt); window.removeEventListener('appinstalled', onInstalled) }
+    return () => { window.removeEventListener('tataloka-install-ready', take); window.removeEventListener('appinstalled', onInstalled) }
   }, [])
+  // → 'accepted' | 'dismissed' | 'unavailable'. The browser's event can be used once only.
   async function install() {
-    if (!installPrompt) return
-    installPrompt.prompt()
-    await installPrompt.userChoice.catch(() => null)
+    const ev = installPrompt
+    if (!ev) return 'unavailable'
+    window.__tatalokaInstall = null
     setInstallPrompt(null)
+    try {
+      await ev.prompt()
+      const choice = await ev.userChoice
+      return choice?.outcome === 'accepted' ? 'accepted' : 'dismissed'
+    } catch {
+      return 'unavailable'
+    }
   }
   // Views share object URLs across captures (adding a view keeps the others): free only unused ones.
   const viewUrls = useRef(new Set())
