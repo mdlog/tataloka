@@ -53,6 +53,10 @@ const P = {
   home: <><path d="M4 10.5 12 4l8 6.5" /><path d="M6 9v10.5h12V9M10 19.5v-5h4v5" /></>,
   more: <><circle cx="6" cy="12" r="1.2" fill="currentColor" /><circle cx="12" cy="12" r="1.2" fill="currentColor" /><circle cx="18" cy="12" r="1.2" fill="currentColor" /></>,
   install: <><rect x="6.5" y="2.5" width="11" height="19" rx="2.5" /><path d="M12 7v7M9.2 11.4 12 14.2l2.8-2.8M10.5 18.5h3" /></>,
+  // iOS "Share" (square with an arrow up), "Add to Home Screen" (plus in a square), browser menu (⋮)
+  share: <><path d="M12 3v11M8.5 6.5 12 3l3.5 3.5" /><path d="M8 10H6.5a1 1 0 0 0-1 1v8.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H16" /></>,
+  addSquare: <><rect x="4" y="4" width="16" height="16" rx="3.5" /><path d="M12 8.5v7M8.5 12h7" /></>,
+  kebab: <><circle cx="12" cy="5.5" r="1.2" fill="currentColor" stroke="none" /><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none" /><circle cx="12" cy="18.5" r="1.2" fill="currentColor" stroke="none" /></>,
 }
 
 export default function Icon({ name, size, className = '', title, ...rest }) {

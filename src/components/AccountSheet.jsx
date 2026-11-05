@@ -5,16 +5,41 @@ import { Avatar } from './UserMenu.jsx'
 const isIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1)
 const isStandalone = () => window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true
 
-// Manual steps for when the browser offers no install dialog (iOS, already used, dismissed, other browsers).
-function installSteps(t) {
+// Installing by hand. iPhone browsers (Safari and Chrome alike) give websites no install button —
+// Apple only allows Share → Add to Home Screen; elsewhere the browser's dialog may be unavailable or dismissed.
+function installGuide(t) {
   const ua = navigator.userAgent
   if (isIOS()) {
-    return /CriOS/i.test(ua)
-      ? t('In Chrome, tap Share (the square with an arrow) in the address bar, then “Add to Home Screen”.', 'Di Chrome, ketuk Bagikan (kotak dengan panah) di address bar, lalu “Tambahkan ke Layar Utama”.')
-      : t('In Safari, tap Share, then “Add to Home Screen”.', 'Di Safari, ketuk Bagikan, lalu “Tambahkan ke Layar Utama”.')
+    const chrome = /CriOS/i.test(ua)
+    return {
+      intro: t('iPhone doesn’t allow one-tap install for websites — add Tataloka from the Share menu.', 'iPhone tidak mengizinkan situs dipasang dengan satu ketukan — tambahkan Tataloka lewat menu Bagikan.'),
+      steps: [
+        { icon: 'share', text: chrome ? t('Tap Share in the address bar (top right).', 'Ketuk ikon Bagikan di address bar (kanan atas).') : t('Tap Share in the toolbar.', 'Ketuk ikon Bagikan di bilah alat.') },
+        { icon: 'addSquare', text: t('Scroll down and choose “Add to Home Screen”.', 'Gulir ke bawah, pilih “Tambahkan ke Layar Utama”.') },
+        { icon: 'check', text: t('Tap “Add” — Tataloka appears on your home screen.', 'Ketuk “Tambah” — Tataloka muncul di layar utama.') },
+      ],
+      note: chrome ? t('Not in the list? Update Chrome and iOS, or open www.tataloka.com in Safari.', 'Tidak ada di daftar? Perbarui Chrome dan iOS, atau buka www.tataloka.com di Safari.') : null,
+    }
   }
-  if (/android/i.test(ua)) return t('Open the browser menu ⋮ (top right), then “Install app” or “Add to Home screen”.', 'Buka menu browser ⋮ (kanan atas), lalu “Instal aplikasi” atau “Tambahkan ke layar utama”.')
-  return t('Click the install icon at the right of the address bar, or open the browser menu ⋮ → “Install Tataloka”.', 'Klik ikon instal di kanan address bar, atau buka menu browser ⋮ → “Instal Tataloka”.')
+  if (/android/i.test(ua)) {
+    return {
+      intro: t('Install it from the browser menu.', 'Pasang lewat menu browser.'),
+      steps: [
+        { icon: 'kebab', text: t('Open the browser menu ⋮ (top right).', 'Buka menu browser ⋮ (kanan atas).') },
+        { icon: 'install', text: t('Choose “Install app” or “Add to Home screen”.', 'Pilih “Instal aplikasi” atau “Tambahkan ke layar utama”.') },
+        { icon: 'check', text: t('Confirm — Tataloka appears on your home screen.', 'Konfirmasi — Tataloka muncul di layar utama.') },
+      ],
+      note: t('“Open app” in the menu means it is already installed.', 'Jika di menu tertulis “Buka aplikasi”, Tataloka sudah terpasang.'),
+    }
+  }
+  return {
+    intro: t('Install it from the browser.', 'Pasang lewat browser.'),
+    steps: [
+      { icon: 'install', text: t('Click the install icon at the right of the address bar.', 'Klik ikon instal di kanan address bar.') },
+      { icon: 'kebab', text: t('Or open the browser menu ⋮ → “Install Tataloka”.', 'Atau buka menu browser ⋮ → “Instal Tataloka”.') },
+    ],
+    note: null,
+  }
 }
 
 // "Account" tab on phones: profile, language, install, legal links, log out.
@@ -27,7 +52,10 @@ export default function AccountSheet({ locale, setLocale, user, live, credits, c
   }, [onClose])
   // null → not asked yet; 'asking' while the browser's dialog is open; then onInstall's outcome
   const [installState, setInstallState] = useState(null)
+  const [guideOpen, setGuideOpen] = useState(false)
   const offerInstall = !isStandalone()
+  const guide = installGuide(t)
+  const oneTap = canInstall && !installState && !isIOS()
   async function installClick() {
     setInstallState('asking')
     setInstallState(await onInstall())
@@ -84,11 +112,23 @@ export default function AccountSheet({ locale, setLocale, user, live, credits, c
               <strong>{installState === 'accepted' ? t('Tataloka is installed', 'Tataloka sudah terpasang') : t('Install the app', 'Pasang aplikasi')}</strong>
               <span>{installState === 'accepted'
                 ? t('Open it from your home screen.', 'Buka dari layar utama.')
-                : canInstall && !installState
+                : oneTap
                   ? t('Add Tataloka to your home screen — opens full screen, like an app.', 'Tambahkan Tataloka ke layar utama — terbuka layar penuh, seperti aplikasi.')
-                  : (installState === 'asking' ? t('No install window? ', 'Jendela instal tidak muncul? ') : '') + installSteps(t)}</span>
+                  : (installState === 'asking' ? t('No install window? ', 'Jendela instal tidak muncul? ') : '') + guide.intro}</span>
             </div>
-            {canInstall && !installState && <button className="btn btn-brand btn-sm" onClick={installClick}>{t('Install', 'Pasang')}</button>}
+            {installState !== 'accepted' && (oneTap
+              ? <button className="btn btn-brand btn-sm" onClick={installClick}>{t('Install', 'Pasang')}</button>
+              : <button className="btn btn-brand btn-sm" aria-expanded={guideOpen} onClick={() => setGuideOpen(o => !o)}>{guideOpen ? t('Hide', 'Tutup') : t('How to install', 'Cara pasang')}</button>)}
+            {guideOpen && !oneTap && installState !== 'accepted' && (
+              <>
+                <ol className="install-guide">
+                  {guide.steps.map((s, i) => (
+                    <li key={i}><span className="install-step-ic"><Icon name={s.icon} size={19} /></span><div>{s.text}</div></li>
+                  ))}
+                </ol>
+                {guide.note && <p className="install-note">{guide.note}</p>}
+              </>
+            )}
           </div>
         )}
 
