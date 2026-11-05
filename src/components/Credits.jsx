@@ -110,7 +110,7 @@ export function CreditsModal({ locale, need, onClose }) {
                 <strong>{t('Need more credits?', 'Butuh kredit lebih?')}</strong>
                 <span className="small muted">{t('Plus (150/month) and Pro (400/month) plans are coming soon.', 'Paket Plus (150/bulan) dan Pro (400/bulan) segera hadir.')}</span>
               </div>
-              <a className="btn btn-secondary btn-sm" href="/#pricing" target="_blank" rel="noopener">{t('See plans', 'Lihat paket')}</a>
+              <a className="btn btn-secondary btn-sm" href="/#pricing">{t('See plans', 'Lihat paket')}</a>
             </div>
           </>
         )}

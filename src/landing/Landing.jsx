@@ -35,6 +35,31 @@ function useReveal() {
   }, [])
 }
 
+// Opened as /#pricing (e.g. "See plans" in the app): this page is a lazy chunk, so the
+// browser's own jump to the anchor ran before the section existed. Jump here instead, and
+// follow the section while images above it load, until the user scrolls.
+function useHashScroll() {
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.slice(1))
+    const el = id && document.getElementById(id)
+    if (!el) return
+    const jump = () => el.scrollIntoView({ behavior: 'instant', block: 'start' })
+    jump()
+    let touched = false
+    const stop = () => { touched = true }
+    const events = ['wheel', 'touchstart', 'keydown', 'mousedown']
+    events.forEach(e => window.addEventListener(e, stop, { passive: true }))
+    const follow = () => { if (!touched) jump() }
+    const timers = [120, 450, 1200].map(ms => setTimeout(follow, ms))
+    window.addEventListener('load', follow)
+    return () => {
+      timers.forEach(clearTimeout)
+      window.removeEventListener('load', follow)
+      events.forEach(e => window.removeEventListener(e, stop))
+    }
+  }, [])
+}
+
 // Before/after slider: the real sample photo vs. Muse Image's restyle of it.
 function BeforeAfter({ t }) {
   const [cut, setCut] = useState(54)
@@ -72,6 +97,7 @@ export default function Landing() {
   const [scrolled, setScrolled] = useState(false)
   const [yearly, setYearly] = useState(false)
   useReveal()
+  useHashScroll()
   useEffect(() => { getMe().then(setUser) }, [])
   useEffect(() => { document.documentElement.lang = locale }, [locale])
   useEffect(() => {

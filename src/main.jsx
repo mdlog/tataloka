@@ -7,9 +7,10 @@ import './index.css'
 const App = lazy(() => import('./App.jsx'))
 const Landing = lazy(() => import('./landing/Landing.jsx'))
 
-// Installed on the home screen, the app opens straight into the design tool.
+// Installed on the home screen, the app opens straight into the design tool
+// (but a link to a landing section, like "See plans" → /#pricing, still shows it).
 const standalone = window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true
-if (standalone && window.location.pathname === '/') window.location.replace('/app')
+if (standalone && window.location.pathname === '/' && !window.location.hash) window.location.replace('/app')
 const isApp = /^\/app(\/|$)/.test(window.location.pathname)
 
 // Same splash as index.html, kept while the page's code loads.
