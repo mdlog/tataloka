@@ -11,6 +11,9 @@ import { formatIDR } from '../lib/roomLayout.js'
 import { RoomSizeField } from './RoomSize.jsx'
 
 const SAMPLE_URL = '/samples/living-room.jpg'
+// On iPhone one picker already offers Photo Library, Take Photo or Video and Choose File,
+// so separate camera/video buttons would only repeat it. Android's picker may lack a camera.
+const IOS = typeof navigator !== 'undefined' && (/iphone|ipad|ipod/i.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1))
 const BUDGET_PRESETS = [10_000_000, 25_000_000, 50_000_000]
 
 export default function SetupView({ locale, room, style, budget, roomSize, capture, live, needsLogin, costs, onRoom, onStyle, onBudget, onRoomSize, onAddViews, onRemoveView, onClearCapture, onGenerate }) {
@@ -140,9 +143,15 @@ export default function SetupView({ locale, room, style, budget, roomSize, captu
               <div className="small muted only-desktop" style={{ maxWidth: 340 }}>{t('Drop photos or a video here, or click. Video: turn slowly around the room for 10–20 seconds.', 'Seret foto atau video ke sini, atau klik. Video: berputar perlahan mengelilingi ruangan 10–20 detik.')}</div>
               <div className="small muted only-mobile" style={{ maxWidth: 300 }}>{t('A video: turn slowly for 10–20 seconds. Photos: straight-on, good light, no people.', 'Video: berputar perlahan 10–20 detik. Foto: lurus dari depan, terang, tanpa orang.')}</div>
               <div className="dropzone-actions only-mobile" onClick={e => e.stopPropagation()}>
-                <button className="btn btn-primary" onClick={() => pick(cameraRef)}><Icon name="camera" size={17} />{t('Photo', 'Foto')}</button>
-                <button className="btn btn-primary" onClick={() => pick(videoRef)}><Icon name="video" size={17} />{t('Video', 'Video')}</button>
-                <button className="btn btn-secondary" onClick={() => pick(inputRef)}><Icon name="image" size={17} />{t('Gallery', 'Galeri')}</button>
+                {IOS ? (
+                  <button className="btn btn-primary" onClick={() => pick(inputRef)}><Icon name="camera" size={17} />{t('Add a photo or video', 'Tambah foto atau video')}</button>
+                ) : (
+                  <>
+                    <button className="btn btn-primary" onClick={() => pick(cameraRef)}><Icon name="camera" size={17} />{t('Photo', 'Foto')}</button>
+                    <button className="btn btn-primary" onClick={() => pick(videoRef)}><Icon name="video" size={17} />{t('Video', 'Video')}</button>
+                    <button className="btn btn-secondary" onClick={() => pick(inputRef)}><Icon name="image" size={17} />{t('Gallery', 'Galeri')}</button>
+                  </>
+                )}
               </div>
               <button className="btn btn-secondary btn-sm" style={{ marginTop: 6 }} onClick={e => { e.stopPropagation(); useSample() }}>
                 <Icon name="image" size={15} />{t('Use a sample photo', 'Pakai foto contoh')}
