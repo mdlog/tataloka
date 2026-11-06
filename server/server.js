@@ -17,7 +17,7 @@ import { ARCHETYPES, measuredDims } from '../src/lib/roomLayout.js'
 import { openDb } from './db.js'
 import { createAuth } from './auth.js'
 import { createDesignsRouter, createRenders } from './designs.js'
-import { createCredits, chargeFor } from './credits.js'
+import { createCredits, chargeFor, requireBalance } from './credits.js'
 import { createMailer } from './mailer.js'
 import { ROUTE_COSTS } from '../src/data/plans.js'
 
@@ -190,7 +190,9 @@ export function createApp({ config = readConfig(), fetchImpl, db = openDb(config
     return data
   }))
 
-  app.post('/api/command', guard, express.json({ limit: '64kb' }), handler('command', async req => {
+  // The assistant (text + voice) costs no credits, but only while the account has some left.
+  const balance = requireBalance(credits)
+  app.post('/api/command', guard, balance, express.json({ limit: '64kb' }), handler('command', async req => {
     const b = req.body || {}
     const text = String(b.text || '').trim().slice(0, 500)
     if (!text) throw new BadRequest('text is required')
@@ -210,7 +212,7 @@ export function createApp({ config = readConfig(), fetchImpl, db = openDb(config
     return saved ? { ...r, saved } : r
   }))
 
-  app.post('/api/transcribe', guard, express.raw({ type: ['audio/wav', 'audio/x-wav', 'audio/wave'], limit: '8mb' }), handler('transcribe', async req => {
+  app.post('/api/transcribe', guard, balance, express.raw({ type: ['audio/wav', 'audio/x-wav', 'audio/wave'], limit: '8mb' }), handler('transcribe', async req => {
     if (!Buffer.isBuffer(req.body) || req.body.length < 44) throw new BadRequest('send a WAV recording (Content-Type: audio/wav)')
     return meta.transcribe({ wav: req.body })
   }))

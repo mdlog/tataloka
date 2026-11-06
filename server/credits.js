@@ -109,6 +109,18 @@ export function createCredits({ db, now = () => Date.now() }) {
   return { summary, spend, refund, grant, setPlan, history, userIdByEmail: (email) => q.userByEmail.get(String(email).toLowerCase())?.id || null }
 }
 
+// Express middleware for free AI routes (the assistant): no charge, but they need a balance —
+// they stop when the credits run out and work again when they refill.
+export function requireBalance(credits, min = 1) {
+  return (req, res, next) => {
+    if (!credits) return next()
+    const s = credits.summary(req.user.id)
+    res.set('X-Tataloka-Credits', String(s.remaining))
+    if (s.remaining >= min) return next()
+    res.status(402).json({ error: 'Your credits have run out — the assistant works again when they refill.', code: 'no_credits', need: min, credits: s })
+  }
+}
+
 // Express middleware: charge the route's credits, refund if the handler fails.
 // The remaining balance goes back in the X-Tataloka-Credits header.
 // cost / need may be functions of the request (e.g. a design that reads extra views costs more).

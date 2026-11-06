@@ -112,7 +112,9 @@ export async function interpretCommand(text, { locale, context }) {
     // If the model is unsure but the rules found something, trust the rules.
     if ((!cmd.action || cmd.action === 'unknown') && local.action !== 'unknown') return { ...local, via: 'local' }
     return { ...cmd, via: 'muse-spark' }
-  } catch {
+  } catch (e) {
+    // out of credits / not verified / logged out: the assistant stops (the app shows why)
+    if (e.code === 'no_credits' || e.code === 'email_unverified' || e.code === 'auth_required') throw e
     return { ...local, via: 'local' }
   }
 }

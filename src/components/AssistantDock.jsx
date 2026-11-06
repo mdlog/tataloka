@@ -16,6 +16,7 @@ export default function AssistantDock({ locale = 'en', live, context, onCommand,
   const stopRef = useRef(null)
   const logRef = useRef(null)
   useEffect(() => () => stopRef.current?.(), [])
+  useEffect(() => { if (locked) { stopRef.current?.(); setOpen(false) } }, [locked]) // e.g. the credits just ran out
   useEffect(() => { logRef.current?.scrollTo(0, logRef.current.scrollHeight) }, [log])
 
   const push = (entry) => setLog(l => [...l.slice(-11), entry])
@@ -30,6 +31,10 @@ export default function AssistantDock({ locale = 'en', live, context, onCommand,
       const cmd = await interpretCommand(query, { locale, context })
       const reply = await onCommand(cmd)
       push({ who: 'bot', text: reply || cmd.reply || t('Done.', 'Siap.'), via: cmd.via })
+    } catch (e) {
+      push({ who: 'bot', text: e.code === 'no_credits'
+        ? t('Your credits have run out — the assistant works again when they refill.', 'Kredit habis — asisten aktif lagi saat kredit terisi.')
+        : e.code === 'email_unverified' ? t('Verify your email to use the assistant.', 'Verifikasi emailmu untuk memakai asisten.') : e.message })
     } finally {
       setBusy(false)
     }

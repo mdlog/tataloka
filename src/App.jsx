@@ -500,7 +500,12 @@ export default function App() {
         </footer>
 
         {stage === 'results' && <AssistantDock locale={locale} live={live} context={assistantContext} onCommand={handleCommand}
-          locked={live && !user} onLocked={() => setAuthModal({ mode: 'login', reason: t('Log in to talk to the design assistant.', 'Masuk untuk memakai asisten desain.') })} />}
+          locked={live && (!user || !user.emailVerified || (!!credits && credits.remaining < 1))}
+          onLocked={() => {
+            if (!user) setAuthModal({ mode: 'login', reason: t('Log in to talk to the design assistant.', 'Masuk untuk memakai asisten desain.') })
+            else if (!user.emailVerified) setVerifyModal({ sent: false, resendIn: 0 })
+            else setCreditsModal({ need: 1 }) // free while there are credits
+          }} />}
         {drawer && (
           <CatalogDrawer mode={drawer} room={roomGraph?.room?.type || selectedRoom} style={roomGraph?.style?.name || selectedStyle} live={live} locale={locale}
             initialQuery={drawer.query || ''} onClose={() => setDrawer(null)} onPick={onPick} costs={costs} />

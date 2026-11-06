@@ -26,7 +26,7 @@ Paket unlimited akan merugi jika dipakai pengguna berat, sedangkan kuota per fit
 
 **30 kredit gratis = maksimal ±US$0,43 (±Rp7.000) per pengguna per bulan**, dihitung jika seluruh kredit dipakai untuk aksi termahal. Contoh: 10 desain dari foto = US$0,39. Campuran 5 desain dari foto + 10 ganti gaya + 5 render = US$0,39.
 
-Di luar kredit, perintah asisten (±US$0,003 per perintah) dan transkripsi suara digratiskan. Pemakaian keduanya hanya dibatasi rate limit 60 permintaan AI per 10 menit per akun. Jika perlu, beri batas harian untuk asisten (misalnya 100 perintah/hari ≈ US$0,30) agar tidak disalahgunakan.
+Perintah asisten (±US$0,003 per perintah) dan transkripsi suara tidak memotong kredit, tetapi hanya bisa dipakai selama akun masih punya kredit (saldo 0 = asisten berhenti sampai kredit terisi lagi). Pemakaiannya juga dibatasi rate limit 60 permintaan AI per 10 menit per akun. Jika perlu, beri batas harian untuk asisten (misalnya 100 perintah/hari ≈ US$0,30) agar tidak disalahgunakan.
 
 | Aksi | Kredit |
 |---|---|
@@ -35,7 +35,8 @@ Di luar kredit, perintah asisten (±US$0,003 per perintah) dan transkripsi suara
 | Desain tanpa foto / ganti gaya | 1 |
 | Render foto AI | 1 |
 | Cari di Tokopedia & Shopee | 1 (pencarian yang sama dalam 24 jam gratis) |
-| Asisten desain, edit, simpan, ekspor | Gratis |
+| Asisten desain (teks & suara) | Gratis selama masih ada kredit |
+| Edit, simpan, ekspor | Gratis |
 
 Aturan yang menjaga kepercayaan pengguna:
 

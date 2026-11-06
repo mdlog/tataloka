@@ -249,7 +249,7 @@ describe('resilience', () => {
       const seg = await postJSON(s.base, '/api/segment', { image: IMG })
       assert.equal(seg.status, 502)
       assert.equal(seg.headers.get('x-tataloka-credits'), '29')
-      // commands are free; market search costs 1 the first time only
+      // commands cost nothing; market search costs 1 the first time only
       await postJSON(s.base, '/api/command', { text: 'hi' })
       await postJSON(s.base, '/api/market-search', { query: 'kloset duduk', archetype: 'toilet' })
       await postJSON(s.base, '/api/market-search', { query: 'kloset duduk', archetype: 'toilet' })
@@ -260,6 +260,12 @@ describe('resilience', () => {
       const body = await out.json()
       assert.equal(body.code, 'no_credits')
       assert.equal(body.credits.remaining, 0)
+      // the assistant is free while there are credits, and stops when they run out
+      const cmd = await postJSON(s.base, '/api/command', { text: 'hi' })
+      assert.equal(cmd.status, 402)
+      assert.equal((await cmd.json()).code, 'no_credits')
+      const voice = await fetch(s.base + '/api/transcribe', { method: 'POST', headers: { 'Content-Type': 'audio/wav', Cookie: cookies.get(s.base) }, body: new Uint8Array(64) })
+      assert.equal(voice.status, 402)
       assert.ok(Date.parse(body.credits.resetsAt) > Date.now())
       const renders = meta.calls.filter(c => c.path === '/images/generations').length
       assert.equal(renders, 28, 'no Meta call without credits')

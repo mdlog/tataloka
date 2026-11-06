@@ -2,7 +2,8 @@
 // (balance + costs on buttons) and the landing page (pricing).
 // 1 credit covers at most ~US$0.0142 of Meta Model API usage (measured); see docs/PRICING.md.
 
-// Credits charged per server route. Assistant commands and voice transcription are free.
+// Credits charged per server route. Assistant commands and voice transcription cost nothing,
+// but work only while the account has credits left (server/credits.js requireBalance).
 // `views` is added to a design that also reads extra views of the room (video frames / more photos).
 export const ROUTE_COSTS = { segment: 2, design: 1, views: 2, render: 1, market: 1 }
 
@@ -13,7 +14,7 @@ export const ACTIONS = [
   { id: 'design', credits: ROUTE_COSTS.design, en: 'Design without a photo, or restyle', id_: 'Desain tanpa foto, atau ganti gaya', noteEn: 'Muse Spark', noteId: 'Muse Spark' },
   { id: 'render', credits: ROUTE_COSTS.render, en: 'Photoreal AI render', id_: 'Render foto AI', noteEn: 'Muse Image', noteId: 'Muse Image' },
   { id: 'market', credits: ROUTE_COSTS.market, en: 'Search Tokopedia & Shopee', id_: 'Cari di Tokopedia & Shopee', noteEn: 'Meta web search · repeats are free', noteId: 'Pencarian web Meta · pencarian ulang gratis' },
-  { id: 'assistant', credits: 0, en: 'Design assistant (text & voice)', id_: 'Asisten desain (teks & suara)', noteEn: 'Muse Spark · Muse Voice', noteId: 'Muse Spark · Muse Voice' },
+  { id: 'assistant', credits: 0, en: 'Design assistant (text & voice)', id_: 'Asisten desain (teks & suara)', noteEn: 'Muse Spark · Muse Voice · free while you have credits', noteId: 'Muse Spark · Muse Voice · gratis selama masih ada kredit' },
 ]
 
 export const PLANS = [

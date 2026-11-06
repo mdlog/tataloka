@@ -294,7 +294,8 @@ Every account gets **30 free AI credits per month** (refilled on the 1st, Jakart
 | Design without a photo, or restyle | 1 |
 | Photoreal AI render | 1 |
 | Tokopedia & Shopee search (repeats within 24 h are free) | 1 |
-| Assistant, editing, saving, exporting | free |
+| Assistant (text & voice) | free while the account has credits |
+| Editing, saving, exporting | free |
 
 Paid plans (Plus Rp49.000 and Pro Rp129.000 per month) and top-ups are designed and shown on the pricing page as *coming soon*; see [docs/PRICING.md](docs/PRICING.md).
 
