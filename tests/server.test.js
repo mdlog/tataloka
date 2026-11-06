@@ -53,13 +53,19 @@ function fakeMeta({ rejectSchema = false, samFails = [] } = {}) {
 
 // Every test app gets its own in-memory database; AI routes need a logged-in user,
 // so serve() registers one and postJSON() sends its session cookie.
-const createApp = (opts) => createAppRaw({ db: openDb(':memory:'), ...opts })
+// Verification emails are captured, not sent; serve() verifies its account with the emailed code.
+const sentMail = []
+const testMailer = { send: async (m) => { sentMail.push(m); return { sent: true } } }
+const codeFor = (to) => [...sentMail].reverse().find(m => m.to === to)?.text.split('\n').map(l => l.trim()).find(l => /^\d{6}$/.test(l))
+const createApp = (opts) => createAppRaw({ db: openDb(':memory:'), mailer: testMailer, ...opts })
 const cookies = new Map()
 async function serve(app) {
   const server = await new Promise(res => { const s = app.listen(0, () => res(s)) })
   const base = `http://127.0.0.1:${server.address().port}`
   const r = await fetch(base + '/api/auth/register', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'Tester', email: 'tester@example.com', password: 'correct horse battery' }) })
-  cookies.set(base, (r.headers.get('set-cookie') || '').split(';')[0])
+  const cookie = (r.headers.get('set-cookie') || '').split(';')[0]
+  cookies.set(base, cookie)
+  await fetch(base + '/api/auth/verify-email', { method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: cookie }, body: JSON.stringify({ code: codeFor('tester@example.com') }) })
   return { server, base }
 }
 const postJSON = (base, path, body) => fetch(base + path, { method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: cookies.get(base) || '' }, body: JSON.stringify(body) })
@@ -169,7 +175,7 @@ describe('server with the Meta API (faked)', () => {
 describe('saved AI renders', () => {
   it('stores the render with its design, only for the owner, and removes it with the design', async () => {
     const db = openDb(':memory:')
-    const s = await serve(createAppRaw({ db, config: config(), fetchImpl: fakeMeta().fetchImpl }))
+    const s = await serve(createAppRaw({ db, mailer: testMailer, config: config(), fetchImpl: fakeMeta().fetchImpl }))
     const get = (p, cookie = cookies.get(s.base)) => fetch(s.base + p, { headers: { Cookie: cookie } })
     try {
       const graph = buildDemoRoomGraph('living', 'Japandi', 'en')
@@ -280,7 +286,7 @@ describe('resilience', () => {
   })
   it('segmenting for a multi-view design checks the credits the whole design will need', async () => {
     const db = openDb(':memory:')
-    const s = await serve(createAppRaw({ db, config: config(), fetchImpl: fakeMeta().fetchImpl }))
+    const s = await serve(createAppRaw({ db, mailer: testMailer, config: config(), fetchImpl: fakeMeta().fetchImpl }))
     try {
       await fetch(s.base + '/api/credits', { headers: { Cookie: cookies.get(s.base) } }) // starts this month's period
       db.prepare('UPDATE users SET credits_used = 26').run() // 4 credits left

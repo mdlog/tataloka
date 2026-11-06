@@ -43,7 +43,7 @@ function installGuide(t) {
 }
 
 // "Account" tab on phones: profile, language, install, legal links, log out.
-export default function AccountSheet({ locale, setLocale, user, live, credits, canInstall, onInstall, onLogin, onRegister, onSaved, onCredits, onLogout, onClose }) {
+export default function AccountSheet({ locale, setLocale, user, live, credits, canInstall, onInstall, onLogin, onRegister, onSaved, onCredits, onVerify, onLogout, onClose }) {
   const t = (en, id) => (locale === 'id' ? id : en)
   useEffect(() => {
     const onKey = e => e.key === 'Escape' && onClose()
@@ -89,6 +89,9 @@ export default function AccountSheet({ locale, setLocale, user, live, credits, c
         <div className="list-group">
           {user && (
             <button className="list-row" onClick={onSaved}><Icon name="layers" /><span>{t('My designs', 'Desain saya')}</span><Icon name="chevronRight" size={18} className="list-chevron" /></button>
+          )}
+          {user && live && !user.emailVerified && (
+            <button className="list-row list-row-warn" onClick={onVerify}><Icon name="alert" /><span>{t('Verify your email', 'Verifikasi emailmu')}</span><em>{t('AI locked', 'AI terkunci')}</em><Icon name="chevronRight" size={18} className="list-chevron" /></button>
           )}
           {user && credits && (
             <button className="list-row" onClick={onCredits}><Icon name="wallet" /><span>{t('Credits', 'Kredit')}</span><em>{credits.remaining} {t('left', 'tersisa')}</em><Icon name="chevronRight" size={18} className="list-chevron" /></button>

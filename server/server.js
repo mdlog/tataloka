@@ -18,6 +18,7 @@ import { openDb } from './db.js'
 import { createAuth } from './auth.js'
 import { createDesignsRouter, createRenders } from './designs.js'
 import { createCredits, chargeFor } from './credits.js'
+import { createMailer } from './mailer.js'
 import { ROUTE_COSTS } from '../src/data/plans.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -48,6 +49,10 @@ export function readConfig(env = process.env) {
     publicUrl: (env.PUBLIC_URL || '').replace(/\/+$/, ''),
     // Monthly AI credits per account (src/data/plans.js). CREDITS=off disables them.
     creditsEnabled: !/^(off|false|0)$/i.test(env.CREDITS || ''),
+    // Verification emails (Resend). Without a key, development prints them to the console.
+    resendApiKey: (env.RESEND_API_KEY || '').trim(),
+    mailFrom: (env.MAIL_FROM || 'Tataloka <noreply@tataloka.com>').trim(),
+    production: env.NODE_ENV === 'production',
   }
 }
 
@@ -92,13 +97,13 @@ function handler(name, fn) {
   }
 }
 
-export function createApp({ config = readConfig(), fetchImpl, db = openDb(config.dbFile) } = {}) {
+export function createApp({ config = readConfig(), fetchImpl, db = openDb(config.dbFile), mailer } = {}) {
   const app = express()
   app.disable('x-powered-by')
   app.set('trust proxy', 1)
   const live = !!config.apiKey
   const meta = live ? createMetaClient({ ...config, fetchImpl }) : null
-  const auth = createAuth({ db, config, fetchImpl })
+  const auth = createAuth({ db, config, fetchImpl, mailer: mailer || createMailer({ apiKey: config.resendApiKey, from: config.mailFrom, production: config.production }) })
   const credits = config.creditsEnabled === false ? null : createCredits({ db })
   app.use(auth.loadUser)
   app.use('/api', auth.sameOrigin)
@@ -127,8 +132,8 @@ export function createApp({ config = readConfig(), fetchImpl, db = openDb(config
   const limit = rateLimiter(config.rateLimit)
   const requireLive = (req, res, next) => (live ? next()
     : res.status(503).json({ error: 'META_API_KEY is not configured on the server — the app runs in demo mode.' }))
-  // AI routes cost API credits: they need a key on the server AND a logged-in user.
-  const guard = [requireLive, auth.requireUser, limit]
+  // AI routes cost API credits: they need a key on the server AND a logged-in user with a verified email.
+  const guard = [requireLive, auth.requireUser, auth.requireVerified, limit]
   const bigJson = express.json({ limit: '12mb' })
 
   // Credits are charged after the rate limit and body parsing, and refunded when the call fails.

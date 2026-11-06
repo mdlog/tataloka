@@ -17,7 +17,7 @@
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Account data</strong> — your name and email address. If you sign in with Google we also receive your Google account ID and profile picture (scopes: <code>openid email profile</code>). If you register with email, we store only a salted scrypt hash of your password, never the password itself.</li>
+    <li><strong>Account data</strong> — your name and email address. If you sign in with Google we also receive your Google account ID and profile picture (scopes: <code>openid email profile</code>). If you register with email, we store only a salted scrypt hash of your password, never the password itself, and email you a one-time code to confirm the address (we keep only a hash of the code, for 30 minutes).</li>
     <li><strong>Saved designs</strong> — the designs you create while logged in: room type, style, room size, the products in the design and their placement, prices and budget.</li>
     <li><strong>AI renders</strong> — when you generate an AI render while logged in, the resulting image is saved with that design so you can open it again from <em>My designs</em>. If you uploaded a photo, the render shows your room restyled. It is replaced when you render again, removed when you change the design’s style, and deleted when you delete the design. Only you can view it.</li>
     <li><strong>Credits</strong> — your plan, credit balance and a history of credit use (which AI feature, how many credits, when). It does not include the photos or text you sent.</li>
@@ -38,6 +38,7 @@
   <ul>
     <li><strong>Meta Model API</strong> (SAM 3.1, Muse Spark, Muse Image, Muse Voice) processes your photo, design requests and voice commands to produce results.</li>
     <li><strong>Google</strong> provides “Sign in with Google” when you choose it.</li>
+    <li><strong>Resend</strong> delivers the verification email (your email address and a one-time code) when you register with email.</li>
     <li><strong>Cloudflare</strong> delivers the website securely.</li>
     <li>Product links open <strong>IKEA Indonesia, Tokopedia or Shopee</strong>; their own privacy policies apply on their sites.</li>
   </ul>

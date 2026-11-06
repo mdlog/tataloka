@@ -20,7 +20,10 @@ async function call(url, { method = 'GET', body } = {}) {
 // ---------- accounts ----------
 export const getMe = () => call('/api/auth/me').then(d => d.user).catch(() => null)
 export const login = (email, password) => call('/api/auth/login', { method: 'POST', body: { email, password } }).then(d => d.user)
-export const register = (name, email, password) => call('/api/auth/register', { method: 'POST', body: { name, email, password } }).then(d => d.user)
+// → { user, verification: { sent, resendIn } } — email accounts start unverified
+export const register = (name, email, password, locale) => call('/api/auth/register', { method: 'POST', body: { name, email, password, locale } })
+export const verifyEmail = (code) => call('/api/auth/verify-email', { method: 'POST', body: { code } }).then(d => d.user)
+export const resendVerification = (locale) => call('/api/auth/resend-verification', { method: 'POST', body: { locale } })
 export const logout = () => call('/api/auth/logout', { method: 'POST' })
 export const googleUrl = (returnTo = '/') => `/api/auth/google?returnTo=${encodeURIComponent(returnTo)}`
 

@@ -27,8 +27,11 @@ export default function AuthModal({ initialMode = 'login', reason, initialError,
     e.preventDefault()
     setBusy(true); setError('')
     try {
-      const user = mode === 'login' ? await login(email, password) : await register(name, email, password)
-      onAuthed(user, mode)
+      if (mode === 'login') onAuthed(await login(email, password), mode)
+      else {
+        const r = await register(name, email, password, locale)
+        onAuthed(r.user, mode, r.verification) // the app then asks for the emailed code
+      }
     } catch (err) {
       setError(authErrorText(err.code, locale) || err.message)
       setBusy(false)

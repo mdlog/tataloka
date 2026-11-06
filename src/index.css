@@ -660,3 +660,23 @@ button.list-row:hover, a.list-row:hover { background: var(--surface-2); }
 .crash-card h1 { font-size: 26px; }
 .crash-card p { font-size: 15px; color: var(--ink-2); }
 .crash-actions { display: grid; gap: 6px; width: 100%; margin-top: 8px; }
+
+/* ---------- email verification ---------- */
+.verify-banner { background: var(--warn-soft); border-bottom: 1px solid #f0d9ad; color: #6d4a0f; }
+.verify-banner-inner { display: flex; align-items: center; gap: 10px; min-height: 48px; padding-top: 8px; padding-bottom: 8px; font-size: 13.5px; font-weight: 550; }
+.verify-banner-inner > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.verify-banner .btn { flex: none; }
+.verify-modal { text-align: center; }
+.verify-icon { width: 52px; height: 52px; margin: 0 auto 12px; border-radius: 16px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand-ink); }
+.verify-lead { margin: 8px 0 16px; line-height: 1.5; overflow-wrap: anywhere; }
+.verify-modal .notice { margin-bottom: 12px; text-align: left; }
+.code-input { height: 58px; margin-bottom: 12px; text-align: center; font-size: 28px; font-weight: 700; letter-spacing: .5em; padding-left: .5em; font-variant-numeric: tabular-nums; }
+.code-input::placeholder { color: var(--line-2); letter-spacing: .5em; }
+.verify-foot { margin-top: 12px; }
+.verify-foot .link { font-size: inherit; }
+.verify-later { margin-top: 6px; }
+.list-row-warn > .icon:first-child { color: var(--warn); }
+@media (max-width: 720px) {
+  .verify-banner-inner { font-size: 13px; min-height: 0; }
+  .code-input { font-size: 26px; }
+}

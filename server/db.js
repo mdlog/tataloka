@@ -52,6 +52,15 @@ CREATE TABLE IF NOT EXISTS credit_events (
   created_at  INTEGER NOT NULL
 );
 CREATE INDEX IF NOT EXISTS credit_events_user ON credit_events(user_id, id DESC);
+-- Pending email verification: one live code + link per account (only their hashes are stored).
+CREATE TABLE IF NOT EXISTS email_codes (
+  user_id     TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+  code_hash   TEXT NOT NULL,
+  link_hash   TEXT NOT NULL UNIQUE,
+  attempts    INTEGER NOT NULL DEFAULT 0,
+  sent_at     INTEGER NOT NULL,
+  expires_at  INTEGER NOT NULL
+);
 `
 
 // Columns added after the first release; existing databases get them on start.
@@ -60,6 +69,7 @@ const USER_COLUMNS = {
   credit_period: 'TEXT',
   credits_used: 'INTEGER NOT NULL DEFAULT 0',
   bonus_credits: 'INTEGER NOT NULL DEFAULT 0',
+  email_verified_at: 'INTEGER', // null = email not verified yet (AI features stay locked)
 }
 
 export function openDb(file) {
@@ -69,5 +79,7 @@ export function openDb(file) {
   db.exec(SCHEMA)
   const have = new Set(db.prepare('PRAGMA table_info(users)').all().map(c => c.name))
   for (const [name, type] of Object.entries(USER_COLUMNS)) if (!have.has(name)) db.exec(`ALTER TABLE users ADD COLUMN ${name} ${type}`)
+  // Accounts from before email verification: Google already verified theirs; email + password ones must verify.
+  if (!have.has('email_verified_at')) db.exec('UPDATE users SET email_verified_at = created_at WHERE google_sub IS NOT NULL')
   return db
 }

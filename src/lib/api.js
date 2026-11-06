@@ -32,6 +32,13 @@ async function post(path, body, { raw = false, contentType } = {}) {
     e.code = 'no_credits'
     throw e
   }
+  if (res.status === 403 && data.code === 'email_unverified') {
+    // AI features unlock once the email is verified: let the app open the verification dialog.
+    window.dispatchEvent(new CustomEvent('tataloka-verify-email'))
+    const e = new Error(data.error || 'Verify your email first.')
+    e.code = 'email_unverified'
+    throw e
+  }
   if (res.status === 401 && data.code === 'auth_required') {
     // AI features need an account: let the app open the login dialog.
     window.dispatchEvent(new CustomEvent('tataloka-auth-required'))
@@ -66,7 +73,7 @@ export async function segmentRoom(capture) {
     const r = await post('segment', { image, width: capture.width, height: capture.height, views: 1 + (capture.extras?.length || 0) })
     return { masks: r.masks || [], source: 'live', model: r.model, warnings: r.conceptErrors }
   } catch (e) {
-    if (e.code === 'auth_required' || e.code === 'no_credits') throw e
+    if (e.code === 'auth_required' || e.code === 'no_credits' || e.code === 'email_unverified') throw e
     return { masks: demoMasks({ sample: capture.sample }), source: 'demo', fallbackReason: `SAM 3.1: ${e.message}` }
   }
 }
@@ -85,7 +92,7 @@ export async function designRoom({ capture, masks, roomType, style, locale, budg
     const r = await post('design', { image, images, dims: knownDims || undefined, masks, roomType, style, locale, budgetIDR })
     return normalizeDesign(r.design, { roomType, style, model: r.model, budgetIDR, knownDims, sizeSource })
   } catch (e) {
-    if (e.code === 'auth_required' || e.code === 'no_credits') throw e
+    if (e.code === 'auth_required' || e.code === 'no_credits' || e.code === 'email_unverified') throw e
     return buildDemoRoomGraph(roomType, style, locale, `Muse Spark: ${e.message}`, budgetIDR, knownDims)
   }
 }

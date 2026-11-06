@@ -211,6 +211,8 @@ All settings are environment variables (see [`.env.example`](.env.example)). Sec
 | `PUBLIC_URL` | for Google sign-in | Public origin of the app, e.g. `https://www.example.com`. |
 | `ALLOWED_HOSTS` | no | Extra hostnames the app is served from (dev server and Google redirect). |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | optional | Enables "Continue with Google". Redirect URI: `<PUBLIC_URL>/api/auth/google/callback`. |
+| `RESEND_API_KEY` | for email sign-ups | Sends the 6-digit verification email ([Resend](https://resend.com)); email + password accounts unlock AI after verifying. Without it, development prints the code to the console. |
+| `MAIL_FROM` | no | Sender of the verification email (default `Tataloka <noreply@tataloka.com>`; the domain must be verified in Resend). |
 | `DATA_DIR` | no | Folder for the SQLite database (default `./data`; `/data` in Docker). |
 | `CREDITS` | no | Set to `off` to disable AI credits (the rate limit still applies). |
 

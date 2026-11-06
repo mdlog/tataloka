@@ -1,6 +1,10 @@
 // Accounts, sessions, Google sign-in (with a fake Google) and saved designs.
 import { describe, it, before, after } from 'node:test'
 import assert from 'node:assert/strict'
+import fs from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
+import { DatabaseSync } from 'node:sqlite'
 import { createApp, readConfig } from '../server/server.js'
 import { openDb } from '../server/db.js'
 import { hashPassword, verifyPassword, parseCookies } from '../server/auth.js'
@@ -18,9 +22,16 @@ function fakeGoogle({ email = 'ayu@gmail.com', verified = true, sub = 'g-123' } 
   return { fetchImpl, calls }
 }
 
+// Verification emails are captured instead of sent.
+const mail = []
+const testMailer = { send: async (m) => { mail.push(m); return { sent: true } } }
+const lastMail = (to) => [...mail].reverse().find(m => m.to === to)
+const codeFor = (to) => lastMail(to)?.text.split('\n').map(l => l.trim()).find(l => /^\d{6}$/.test(l))
+const linkFor = (to) => lastMail(to)?.text.match(/https?:\/\/\S+\/api\/auth\/verify-email\?token=\S+/)?.[0]
+
 async function start(env = {}, fetchImpl) {
   const config = { ...readConfig({}), apiKey: 'k', rateLimit: 0, port: 5173, ...env }
-  const app = createApp({ config, fetchImpl, db: openDb(':memory:') })
+  const app = createApp({ config, fetchImpl, db: openDb(':memory:'), mailer: testMailer })
   const server = await new Promise(r => { const s = app.listen(0, () => r(s)) })
   const base = `http://127.0.0.1:${server.address().port}`
   return { server, base }
@@ -135,11 +146,12 @@ describe('Google sign-in', () => {
     } finally { s.server.close() }
   })
 
-  it('links Google to an existing email account and refuses unverified emails', async () => {
+  it('links Google to an existing verified email account (the password keeps working)', async () => {
     const g = fakeGoogle({ email: 'sari@example.com', sub: 'g-777' })
     const s = await start({ google: { clientId: 'cid', clientSecret: 'secret' } }, g.fetchImpl)
     try {
-      await req(s.base, '/api/auth/register', { method: 'POST', body: { name: 'Sari', email: 'sari@example.com', password: 'password-sari' } })
+      const reg = await req(s.base, '/api/auth/register', { method: 'POST', body: { name: 'Sari', email: 'sari@example.com', password: 'password-sari' } })
+      await req(s.base, '/api/auth/verify-email', { method: 'POST', cookie: cookieOf(reg), body: { code: codeFor('sari@example.com') } })
       const go = await req(s.base, '/api/auth/google')
       const state = new URL(go.headers.get('location')).searchParams.get('state')
       const cb = await req(s.base, `/api/auth/google/callback?code=c&state=${state}`, { cookie: cookieOf(go) })
@@ -148,7 +160,29 @@ describe('Google sign-in', () => {
       assert.equal(me.name, 'Sari')
       assert.equal(me.google, true)
       assert.equal(me.hasPassword, true)
+      assert.equal(me.emailVerified, true)
     } finally { s.server.close() }
+  })
+
+  it('Google takes back an email someone registered without verifying it', async () => {
+    const g = fakeGoogle({ email: 'owner@example.com', sub: 'g-owner' })
+    const s = await start({ google: { clientId: 'cid', clientSecret: 'secret' } }, g.fetchImpl)
+    try {
+      const squatter = cookieOf(await req(s.base, '/api/auth/register', { method: 'POST', body: { name: 'Not the owner', email: 'owner@example.com', password: 'squatter-pass' } }))
+      const go = await req(s.base, '/api/auth/google')
+      const state = new URL(go.headers.get('location')).searchParams.get('state')
+      const cb = await req(s.base, `/api/auth/google/callback?code=c&state=${state}`, { cookie: cookieOf(go) })
+      const session = (cb.headers.get('set-cookie') || '').match(/tl_session=[^;]+/)[0]
+      const me = (await (await req(s.base, '/api/auth/me', { cookie: session })).json()).user
+      assert.equal(me.google, true)
+      assert.equal(me.emailVerified, true)
+      assert.equal(me.hasPassword, false) // the unproven password is gone…
+      assert.equal((await (await req(s.base, '/api/auth/me', { cookie: squatter })).json()).user, null) // …and so is its session
+      assert.equal((await req(s.base, '/api/auth/login', { method: 'POST', body: { email: 'owner@example.com', password: 'squatter-pass' } })).status, 401)
+    } finally { s.server.close() }
+  })
+
+  it('refuses Google accounts whose email Google has not verified', async () => {
 
     const g2 = fakeGoogle({ email: 'x@y.com', verified: false })
     const s2 = await start({ google: { clientId: 'cid', clientSecret: 'secret' } }, g2.fetchImpl)
@@ -158,6 +192,101 @@ describe('Google sign-in', () => {
       const cb = await req(s2.base, `/api/auth/google/callback?code=c&state=${state}`, { cookie: cookieOf(go) })
       assert.match(cb.headers.get('location'), /auth_error=google_unverified/)
     } finally { s2.server.close() }
+  })
+})
+
+describe('email verification', () => {
+  let s
+  before(async () => { s = await start() })
+  after(() => s.server.close())
+  const register = async (email) => {
+    const r = await req(s.base, '/api/auth/register', { method: 'POST', body: { name: 'Rina', email, password: 'rina-password', locale: 'id' } })
+    return { r, body: await r.json(), cookie: cookieOf(r) }
+  }
+
+  it('new email accounts start unverified, get a code + link by email, and cannot use AI yet', async () => {
+    const { r, body, cookie } = await register('rina@example.com')
+    assert.equal(r.status, 201)
+    assert.equal(body.user.emailVerified, false)
+    assert.deepEqual(body.verification, { sent: true, resendIn: 60 })
+    const m = lastMail('rina@example.com')
+    assert.match(m.subject, /Kode verifikasi Tataloka: \d{6}/) // in the user's language
+    assert.match(codeFor('rina@example.com'), /^\d{6}$/)
+    assert.ok(linkFor('rina@example.com'))
+    assert.ok(!m.html.includes('<script'))
+    const ai = await req(s.base, '/api/design', { method: 'POST', cookie, body: { roomType: 'living' } })
+    assert.equal(ai.status, 403)
+    assert.equal((await ai.json()).code, 'email_unverified')
+  })
+
+  it('a wrong code counts down, the right code verifies', async () => {
+    const { cookie } = await register('dewi@example.com')
+    const code = codeFor('dewi@example.com')
+    const wrong = await req(s.base, '/api/auth/verify-email', { method: 'POST', cookie, body: { code: code === '000000' ? '111111' : '000000' } })
+    assert.equal(wrong.status, 400)
+    assert.deepEqual(await wrong.json(), { error: 'That code is not right.', code: 'invalid_code', attemptsLeft: 4 })
+    const ok = await req(s.base, '/api/auth/verify-email', { method: 'POST', cookie, body: { code: ` ${code.slice(0, 3)} ${code.slice(3)} ` } })
+    assert.equal(ok.status, 200)
+    assert.equal((await ok.json()).user.emailVerified, true)
+    assert.equal((await (await req(s.base, '/api/auth/me', { cookie })).json()).user.emailVerified, true)
+    // the code is used up; AI routes now pass the verification gate (and reach the Meta call)
+    const ai = await req(s.base, '/api/design', { method: 'POST', cookie, body: { roomType: 'living' } })
+    assert.notEqual(ai.status, 403)
+  })
+
+  it('locks after 5 wrong codes until a new one is sent', async () => {
+    const { cookie } = await register('eka@example.com')
+    const code = codeFor('eka@example.com')
+    const bad = code === '000000' ? '111111' : '000000'
+    for (let i = 0; i < 5; i++) await req(s.base, '/api/auth/verify-email', { method: 'POST', cookie, body: { code: bad } })
+    const locked = await req(s.base, '/api/auth/verify-email', { method: 'POST', cookie, body: { code } })
+    assert.equal(locked.status, 429)
+    assert.equal((await locked.json()).code, 'code_locked')
+  })
+
+  it('resending waits a minute between emails', async () => {
+    const { cookie } = await register('fajar@example.com')
+    const again = await req(s.base, '/api/auth/resend-verification', { method: 'POST', cookie, body: { locale: 'en' } })
+    assert.equal(again.status, 429)
+    const body = await again.json()
+    assert.equal(body.code, 'resend_too_soon')
+    assert.ok(body.retryIn > 0 && body.retryIn <= 60)
+    assert.equal((await req(s.base, '/api/auth/resend-verification', { method: 'POST' })).status, 401)
+  })
+
+  it('the email link verifies in any browser; bad links say so', async () => {
+    const { cookie } = await register('gita@example.com')
+    const link = new URL(linkFor('gita@example.com'))
+    const go = await req(s.base, link.pathname + link.search) // no session cookie
+    assert.equal(go.status, 302)
+    assert.equal(go.headers.get('location'), '/app?verified=1')
+    assert.equal((await (await req(s.base, '/api/auth/me', { cookie })).json()).user.emailVerified, true)
+    assert.equal((await req(s.base, link.pathname + link.search)).headers.get('location'), '/app?verify_error=invalid') // used up
+    assert.equal((await req(s.base, '/api/auth/verify-email?token=nope')).headers.get('location'), '/app?verify_error=invalid')
+  })
+
+  it('Google sign-ups are verified right away', async () => {
+    const g = fakeGoogle({ email: 'hana@gmail.com', sub: 'g-hana' })
+    const s2 = await start({ google: { clientId: 'cid', clientSecret: 'secret' } }, g.fetchImpl)
+    try {
+      const go = await req(s2.base, '/api/auth/google')
+      const state = new URL(go.headers.get('location')).searchParams.get('state')
+      const cb = await req(s2.base, `/api/auth/google/callback?code=c&state=${state}`, { cookie: cookieOf(go) })
+      const session = (cb.headers.get('set-cookie') || '').match(/tl_session=[^;]+/)[0]
+      assert.equal((await (await req(s2.base, '/api/auth/me', { cookie: session })).json()).user.emailVerified, true)
+    } finally { s2.server.close() }
+  })
+
+  it('existing databases: Google accounts become verified, email accounts must verify', () => {
+    const file = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'tl-')), 'old.db')
+    const old = new DatabaseSync(file)
+    old.exec(`CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, name TEXT NOT NULL, password_hash TEXT, google_sub TEXT UNIQUE, avatar_url TEXT, created_at INTEGER NOT NULL);
+      INSERT INTO users VALUES ('a', 'a@gmail.com', 'A', NULL, 'g-a', NULL, 1000), ('b', 'b@example.com', 'B', 'scrypt$x', NULL, NULL, 2000);`)
+    old.close()
+    const db = openDb(file)
+    const rows = db.prepare('SELECT id, email_verified_at FROM users ORDER BY id').all()
+    assert.deepEqual(rows.map(r => [r.id, r.email_verified_at]), [['a', 1000], ['b', null]])
+    db.close()
   })
 })
 

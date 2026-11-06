@@ -12,6 +12,8 @@ import MyDesignsDrawer from './components/MyDesignsDrawer.jsx'
 import { CreditsChip, CreditsModal } from './components/Credits.jsx'
 import MobileNav from './components/MobileNav.jsx'
 import AccountSheet from './components/AccountSheet.jsx'
+import VerifyEmail from './components/VerifyEmail.jsx'
+import { authErrorText } from './lib/authErrors.js'
 import useRoomStore from './hooks/useRoomStore.js'
 import { getHealth, segmentRoom, designRoom } from './lib/api.js'
 import { addProduct, removeItem, updateItem, swapProduct, resizeRoom } from './lib/roomGraph.js'
@@ -56,6 +58,7 @@ export default function App() {
   const [toast, setToast] = useState('')
   const [user, setUser] = useState(undefined) // undefined = loading, null = guest
   const [authModal, setAuthModal] = useState(null) // { mode, reason, error, pending }
+  const [verifyModal, setVerifyModal] = useState(null) // { sent, resendIn, pending } — email + password accounts confirm their email
   const [designsOpen, setDesignsOpen] = useState(false)
   const [saveState, setSaveState] = useState('idle') // idle | saving | saved | error
   const [credits, setCredits] = useState(null) // { plan, monthly, used, bonus, remaining, resetsAt } when credits are on
@@ -83,7 +86,19 @@ export default function App() {
     else if (params.has('signup')) setAuthModal({ mode: 'register' })
     else if (params.has('login')) setAuthModal({ mode: 'login' })
     if (params.has('designs')) getMe().then(u => u && setDesignsOpen(true))
+    if (params.has('verified')) setTimeout(() => flash(t('Email verified — your 30 AI credits are ready.', 'Email terverifikasi — 30 kredit AI siap dipakai.')), 300)
+    const verifyError = params.get('verify_error')
+    if (verifyError) {
+      setTimeout(() => flash(authErrorText(`verify_${verifyError}`, locale) || t('That verification link is no longer valid.', 'Link verifikasi itu sudah tidak berlaku.')), 300)
+      getMe().then(u => { if (u && !u.emailVerified) setVerifyModal({ sent: false, resendIn: 0 }) })
+    }
     if ([...params.keys()].length) window.history.replaceState(null, '', window.location.pathname)
+  }, [])
+  // Any AI call refused because the email is not verified yet opens the verification dialog.
+  useEffect(() => {
+    const onVerify = () => setVerifyModal(m => m || { sent: false, resendIn: 0 })
+    window.addEventListener('tataloka-verify-email', onVerify)
+    return () => window.removeEventListener('tataloka-verify-email', onVerify)
   }, [])
   // Any AI call answered with 401 opens the login dialog.
   useEffect(() => {
@@ -187,6 +202,7 @@ export default function App() {
   // then continue with what the user clicked.
   function requireAuth(reason, action) {
     if (live && !user) { setAuthModal({ mode: 'register', reason, pending: action }); return }
+    if (live && !user.emailVerified) { setVerifyModal({ sent: false, resendIn: 0, pending: action }); return }
     action()
   }
   // Stop before starting an AI step the balance cannot cover (the server checks too).
@@ -233,11 +249,23 @@ export default function App() {
   }
 
   // ---------- account ----------
-  function onAuthed(u, mode) {
+  function onAuthed(u, mode, verification) {
     const pending = authModal?.pending
     setUser(u)
     setAuthModal(null)
+    // Email + password accounts: AI (and its credits) unlock after the emailed code.
+    if (live && !u.emailVerified && (mode === 'register' || pending)) {
+      setVerifyModal({ sent: !!verification?.sent, resendIn: verification?.resendIn || 0, pending })
+      return
+    }
     flash(mode === 'register' ? t(`Welcome, ${u.name}!`, `Selamat datang, ${u.name}!`) : t(`Logged in as ${u.name}`, `Masuk sebagai ${u.name}`))
+    if (pending) setTimeout(pending, 0)
+  }
+  function onVerified(u) {
+    const pending = verifyModal?.pending
+    setUser(u)
+    setVerifyModal(null)
+    flash(t('Email verified — your 30 AI credits are ready.', 'Email terverifikasi — 30 kredit AI siap dipakai.'))
     if (pending) setTimeout(pending, 0)
   }
   async function logout() {
@@ -435,6 +463,15 @@ export default function App() {
           </div>
         </header>
 
+        {live && user && !user.emailVerified && (
+          <div className="verify-banner" role="status">
+            <div className="container verify-banner-inner">
+              <Icon name="message" size={18} />
+              <span>{t(`Verify ${user.email} to unlock your 30 free AI credits.`, `Verifikasi ${user.email} untuk mengaktifkan 30 kredit AI gratismu.`)}</span>
+              <button className="btn btn-primary btn-sm" onClick={() => setVerifyModal({ sent: false, resendIn: 0 })}>{t('Verify', 'Verifikasi')}</button>
+            </div>
+          </div>
+        )}
         {stage === 'setup' && (
           <SetupView locale={locale} room={selectedRoom} style={selectedStyle} budget={budget} capture={capture} live={live}
             onRoom={setSelectedRoom} onStyle={setSelectedStyle} onBudget={setBudget}
@@ -473,12 +510,15 @@ export default function App() {
             googleEnabled={!!health.auth?.google} locale={locale} onClose={() => setAuthModal(null)} onAuthed={onAuthed}
             onBeforeGoogle={() => stashCapture(capture)} />
         )}
+        {verifyModal && user && <VerifyEmail locale={locale} email={user.email} sent={verifyModal.sent} resendIn={verifyModal.resendIn}
+          onVerified={onVerified} onClose={() => setVerifyModal(null)} />}
         {creditsModal && <CreditsModal locale={locale} need={creditsModal.need} onClose={() => setCreditsModal(null)} />}
         {designsOpen && <MyDesignsDrawer locale={locale} currentId={designId} onOpen={openDesign} onClose={() => setDesignsOpen(false)}
           onDeleted={id => { if (id === designId) setDesignId(null) }} />}
         {accountOpen && (
           <AccountSheet locale={locale} setLocale={setLocale} user={user} live={live} credits={live ? credits : null}
             canInstall={!!installPrompt} onInstall={install} onClose={() => setAccountOpen(false)}
+            onVerify={() => { setAccountOpen(false); setVerifyModal({ sent: false, resendIn: 0 }) }}
             onLogin={() => { setAccountOpen(false); setAuthModal({ mode: 'login' }) }}
             onRegister={() => { setAccountOpen(false); setAuthModal({ mode: 'register' }) }}
             onSaved={() => { setAccountOpen(false); setDesignsOpen(true) }}
