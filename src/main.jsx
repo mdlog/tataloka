@@ -8,10 +8,12 @@ import ErrorBoundary from './components/ErrorBoundary.jsx'
 const App = lazy(() => import('./App.jsx'))
 const Landing = lazy(() => import('./landing/Landing.jsx'))
 
-// Installed on the home screen, the app opens straight into the design tool
-// (but a link to a landing section, like "See plans" → /#pricing, still shows it).
+// Installed on the home screen, the app opens straight into the design tool. Only a launch is
+// redirected: the landing page opened from inside the app ("About Tataloka", the logo, a link to a
+// section like "See plans" → /#pricing) still shows — those arrive with a same-site referrer.
 const standalone = window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true
-if (standalone && window.location.pathname === '/' && !window.location.hash) window.location.replace('/app')
+const fromThisSite = (() => { try { return !!document.referrer && new URL(document.referrer).origin === window.location.origin } catch { return false } })()
+if (standalone && window.location.pathname === '/' && !window.location.hash && !fromThisSite) window.location.replace('/app')
 const isApp = /^\/app(\/|$)/.test(window.location.pathname)
 
 // Chrome's "Install app" event can fire before the lazily loaded app has mounted:
