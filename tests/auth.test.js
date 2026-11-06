@@ -31,10 +31,11 @@ const linkFor = (to) => lastMail(to)?.text.match(/https?:\/\/\S+\/api\/auth\/ver
 
 async function start(env = {}, fetchImpl) {
   const config = { ...readConfig({}), apiKey: 'k', rateLimit: 0, port: 5173, ...env }
-  const app = createApp({ config, fetchImpl, db: openDb(':memory:'), mailer: testMailer })
+  const db = openDb(':memory:')
+  const app = createApp({ config, fetchImpl, db, mailer: testMailer })
   const server = await new Promise(r => { const s = app.listen(0, () => r(s)) })
   const base = `http://127.0.0.1:${server.address().port}`
-  return { server, base }
+  return { server, base, db }
 }
 const cookieOf = (res) => (res.headers.get('set-cookie') || '').split(';')[0]
 const req = (base, path, { method = 'GET', body, cookie, headers = {} } = {}) => fetch(base + path, {
@@ -263,6 +264,29 @@ describe('email verification', () => {
     assert.equal((await (await req(s.base, '/api/auth/me', { cookie })).json()).user.emailVerified, true)
     assert.equal((await req(s.base, link.pathname + link.search)).headers.get('location'), '/app?verify_error=invalid') // used up
     assert.equal((await req(s.base, '/api/auth/verify-email?token=nope')).headers.get('location'), '/app?verify_error=invalid')
+  })
+
+  it('the email is in the language of the sign-up, with the Tataloka logo', async () => {
+    await register('lang-id@example.com')
+    const id = lastMail('lang-id@example.com')
+    assert.match(id.html, /<html lang="id">/)
+    assert.match(id.html, /Halo Rina,/)
+    assert.match(id.html, /Kode verifikasi/)
+    assert.match(id.html, /Verifikasi email/)
+    assert.doesNotMatch(id.html, /Verify email|Enter this code/)
+    assert.match(id.html, /<img src="https:\/\/www\.tataloka\.com\/icons\/icon-192\.png"[^>]*alt="Tataloka"/)
+
+    const r = await req(s.base, '/api/auth/register', { method: 'POST', body: { name: 'Ann', email: 'lang-en@example.com', password: 'ann-password-1', locale: 'en' } })
+    const en = lastMail('lang-en@example.com')
+    assert.match(en.subject, /^Your Tataloka verification code: \d{6}$/)
+    assert.match(en.html, /<html lang="en">/)
+    assert.match(en.html, /Hi Ann,/)
+    assert.doesNotMatch(en.html, /Kode verifikasi|Halo/)
+
+    // "send a new code" without a language keeps the sign-up language
+    s.db.prepare('UPDATE email_codes SET sent_at = 0').run() // skip the 60 s wait
+    assert.equal((await req(s.base, '/api/auth/resend-verification', { method: 'POST', cookie: cookieOf(r) })).status, 200)
+    assert.match(lastMail('lang-en@example.com').subject, /^Your Tataloka verification code/)
   })
 
   it('Google sign-ups are verified right away', async () => {

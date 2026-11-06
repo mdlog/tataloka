@@ -75,6 +75,7 @@ export function createAuth({ db, config, fetchImpl = globalThis.fetch, mailer = 
     insertUser: db.prepare('INSERT INTO users (id, email, name, password_hash, google_sub, avatar_url, created_at, email_verified_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'),
     userById: db.prepare('SELECT * FROM users WHERE id = ?'),
     markVerified: db.prepare('UPDATE users SET email_verified_at = ? WHERE id = ? AND email_verified_at IS NULL'),
+    setLocale: db.prepare('UPDATE users SET locale = ? WHERE id = ?'),
     dropPassword: db.prepare('UPDATE users SET password_hash = NULL WHERE id = ?'),
     deleteUserSessions: db.prepare('DELETE FROM sessions WHERE user_id = ?'),
     codeFor: db.prepare('SELECT * FROM email_codes WHERE user_id = ?'),
@@ -115,13 +116,15 @@ export function createAuth({ db, config, fetchImpl = globalThis.fetch, mailer = 
     q.markVerified.run(Date.now(), userId)
     q.deleteCode.run(userId)
   }
-  // New code + link (replacing any earlier one), emailed to the account. → { sent, resendIn }
-  async function sendVerification(req, user, locale) {
+  // New code + link (replacing any earlier one), emailed to the account in its language. → { sent, resendIn }
+  async function sendVerification(req, user, requested) {
+    const locale = requested === 'id' || requested === 'en' ? requested : localeOf(user.locale)
+    if (locale !== user.locale) q.setLocale.run(locale, user.id)
     const code = String(crypto.randomInt(0, 1_000_000)).padStart(6, '0')
     const token = crypto.randomBytes(24).toString('base64url')
     const now = Date.now()
     q.upsertCode.run(user.id, codeHash(user.id, code), sha256(token), now, now + CODE_MINUTES * 60 * 1000)
-    const mail = verificationEmail({ name: user.name, code, link: `${baseUrl(req)}/api/auth/verify-email?token=${token}`, minutes: CODE_MINUTES, locale })
+    const mail = verificationEmail({ name: user.name, code, link: `${baseUrl(req)}/api/auth/verify-email?token=${token}`, minutes: CODE_MINUTES, locale, siteUrl: config.publicUrl || 'https://www.tataloka.com' })
     const r = await mailer.send({ to: user.email, ...mail })
     return { sent: !!r.sent, resendIn: RESEND_COOLDOWN_MS / 1000 }
   }
@@ -182,7 +185,7 @@ export function createAuth({ db, config, fetchImpl = globalThis.fetch, mailer = 
     startSession(req, res, user.id)
     // The account exists either way; if the email could not be sent the app offers "send again".
     let verification = { sent: false, resendIn: 0 }
-    try { verification = await sendVerification(req, user, localeOf(req.body?.locale)) } catch (e) { console.warn(`[auth/verify] ${e.message}`) }
+    try { verification = await sendVerification(req, user, localeOf(req.body?.locale)) } catch (e) { console.warn(`[auth/verify] ${e.message}`) } // the app's language at sign-up
     res.status(201).json({ user: publicUser(user), verification })
   })
 
@@ -220,7 +223,7 @@ export function createAuth({ db, config, fetchImpl = globalThis.fetch, mailer = 
     const wait = row ? row.sent_at + RESEND_COOLDOWN_MS - Date.now() : 0
     if (wait > 0) return res.status(429).json({ error: `Wait ${Math.ceil(wait / 1000)} s before sending another code.`, code: 'resend_too_soon', retryIn: Math.ceil(wait / 1000) })
     try {
-      res.json({ verification: await sendVerification(req, req.user, localeOf(req.body?.locale)) })
+      res.json({ verification: await sendVerification(req, req.user, req.body?.locale) })
     } catch (e) {
       console.warn(`[auth/verify] ${e.message}`)
       res.status(502).json({ error: 'The email could not be sent — try again in a minute.', code: 'email_failed' })

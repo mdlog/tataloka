@@ -70,6 +70,7 @@ const USER_COLUMNS = {
   credits_used: 'INTEGER NOT NULL DEFAULT 0',
   bonus_credits: 'INTEGER NOT NULL DEFAULT 0',
   email_verified_at: 'INTEGER', // null = email not verified yet (AI features stay locked)
+  locale: 'TEXT', // 'en' | 'id': the language of the account's emails (the app's language at sign-up)
 }
 
 export function openDb(file) {
