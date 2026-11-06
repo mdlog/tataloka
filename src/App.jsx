@@ -268,12 +268,12 @@ export default function App() {
     flash(t('Email verified — your 30 AI credits are ready.', 'Email terverifikasi — 30 kredit AI siap dipakai.'))
     if (pending) setTimeout(pending, 0)
   }
+  // Logging out goes back to the landing page. This device forgets the open design (it stays saved
+  // in the account), so on a shared phone or laptop the next person does not see it.
   async function logout() {
     try { await apiLogout() } catch { /* session already gone */ }
-    setUser(null); setDesignId(null); setDesignsOpen(false)
-    lastSaved.current = ''
-    setSaveState('idle')
-    flash(t('Logged out', 'Kamu sudah keluar'))
+    useRoomStore.setState({ roomGraph: null, designId: null })
+    window.location.assign('/')
   }
   async function openDesign(id) {
     const d = await getDesign(id)
